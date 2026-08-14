@@ -1,0 +1,59 @@
+
+@function vw($px, $baseWidth)
+{
+	@return calc($px / $baseWidth) * 100vw;
+}
+
+@import "biography";
+@import "works";
+
+html, body
+{
+	margin           : 0;
+	padding          : 0;
+	border           : 0px;
+	height           : 100%;
+	color            : #333;
+	background-color : #fff;
+	font-size        : 14px;
+	font-family      : 'Noto Sans Japanese', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+}
+
+html,
+body,
+a,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-family    : 'Noto Sans Japanese', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+	text-transform : none;
+}
+
+::-moz-selection
+{
+	color            : #fff;
+	background-color : #141414;
+}
+
+::selection
+{
+	color            : #fff;
+	background-color : #141414;
+}
+
+a
+{
+	color           : #000;
+	text-decoration : underline;
+}
+
+a:hover
+{
+	color : #C80000;
+}

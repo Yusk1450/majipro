@@ -1,0 +1,17 @@
+{
+  "name": "yusk1450_web",
+  "version": "1.0.0",
+  "author": "ISHIGO Yusuke",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "build": "gulp sass"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.77.0"
+  }
+}
