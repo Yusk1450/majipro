@@ -5,30 +5,50 @@ on:
     branches:
       - main
       - master
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    env:
+      SSH_HOST: ${{ secrets.SSH_HOST || vars.SSH_HOST }}
+      SSH_USER: ${{ secrets.SSH_USER || vars.SSH_USER }}
+      SSH_REMOTE_PATH: ${{ secrets.SSH_REMOTE_PATH || vars.SSH_REMOTE_PATH }}
+      SSH_PORT: ${{ secrets.SSH_PORT || vars.SSH_PORT || '22' }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate configuration
+        run: |
+          missing=""
+          [ -z "$SSH_HOST" ] && missing="$missing SSH_HOST"
+          [ -z "$SSH_USER" ] && missing="$missing SSH_USER"
+          [ -z "$SSH_REMOTE_PATH" ] && missing="$missing SSH_REMOTE_PATH"
+          [ -z "${{ secrets.SSH_PASSWORD }}" ] && missing="$missing SSH_PASSWORD"
+          if [ -n "$missing" ]; then
+            echo "未設定の値があります:$missing"
+            echo "SSH_HOST / SSH_USER / SSH_REMOTE_PATH は Repository secrets または Repository variables に設定してください。"
+            echo "SSH_PASSWORD は Repository secrets に設定してください。"
+            exit 1
+          fi
+          echo "Deploy target: ${SSH_USER}@${SSH_HOST}:${SSH_REMOTE_PATH} (port ${SSH_PORT})"
+
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass
-
-      - name: Setup SSH known hosts
-        run: ssh-keyscan -p "${SSH_PORT}" "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
-        env:
-          SSH_PORT: ${{ secrets.SSH_PORT || 22 }}
 
       - name: Deploy with rsync
         run: |
           rsync -avz --delete \
             --exclude 'templates_c/' \
             --exclude '.DS_Store' \
-            -e "sshpass -e ssh -p ${SSH_PORT} -o StrictHostKeyChecking=accept-new" \
-            src/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_REMOTE_PATH }}"
+            -e "sshpass -e ssh -p ${SSH_PORT} \
+              -o StrictHostKeyChecking=no \
+              -o UserKnownHostsFile=/dev/null \
+              -o PreferredAuthentications=password \
+              -o PubkeyAuthentication=no" \
+            src/ "${SSH_USER}@${SSH_HOST}:${SSH_REMOTE_PATH}"
         env:
-          SSH_PORT: ${{ secrets.SSH_PORT || 22 }}
           SSHPASS: ${{ secrets.SSH_PASSWORD }}
