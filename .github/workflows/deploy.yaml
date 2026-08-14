@@ -1,0 +1,47 @@
+# main ブランチに push されたとき、src/ の内容をさくらのレンタルサーバへ配置する
+
+name: Deploy to Server
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    env:
+      SSHPASS: ${{ secrets.SSH_PASSWORD }}
+      SSH_HOST: ${{ secrets.SSH_HOST }}
+      SSH_USER: ${{ secrets.SSH_USER || secrets.SSH_USERNAME }}
+      SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
+      DEST: ${{ secrets.SSH_REMOTE_PATH }}
+
+    steps:
+    - uses: actions/checkout@v5
+
+    # パスワード認証で SSH するため sshpass を導入
+    - name: Install sshpass
+      run: sudo apt-get update && sudo apt-get install -y sshpass
+
+    # ssh rsync実行
+    # -a コピー元のディレクトリを再帰的にオーナー・グループ・パーミッション・タイムスタンプをそのままコピーします。
+    # -h でファイルサイズの視認性をよくする。
+    # -v 詳細を出力する。
+    # -z 圧縮転送
+    # --delete 転送元に無いファイルをサーバー側から削除
+    # -e ssh指定（sshpass で SSH_PASSWORD を渡す）
+    # --rsync-path さくらは FreeBSD で rsync が PATH に無いため絶対パスを指定
+    - name: Deploy
+      run: |
+        rsync -ahvz --delete \
+          --rsync-path=/usr/local/bin/rsync \
+          --exclude=templates_c \
+          --exclude=.DS_Store \
+          -e "sshpass -e ssh -p $SSH_PORT -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" \
+          ./src/ "$SSH_USER@$SSH_HOST:$DEST"
