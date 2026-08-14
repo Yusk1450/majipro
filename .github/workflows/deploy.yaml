@@ -1,11 +1,12 @@
-# main ブランチに push されたとき、src/ の内容をさくらのレンタルサーバへ配置する
+# main ブランチに最新コードが push された際に、
+# 事前に用意した include.txt で指定している必要なファイル、ディレクトリ群のみを
+# preproduction ブランチにコミットする
 
-name: Deploy to Server
+name: Prepare release packages
 
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,19 +16,30 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      SSHPASS: ${{ secrets.SSH_PASSWORD }}
-      SSH_HOST: ${{ secrets.SSH_HOST }}
-      SSH_USER: ${{ secrets.SSH_USER || secrets.SSH_USERNAME }}
-      SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
-      DEST: ${{ secrets.SSH_REMOTE_PATH }}
-
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v4
 
-    # パスワード認証で SSH するため sshpass を導入
-    - name: Install sshpass
-      run: sudo apt-get update && sudo apt-get install -y sshpass
+    # - name: Validate composer.json and composer.lock
+    #   run: composer validate --strict
+
+    # - name: Cache Composer packages
+    #   id: composer-cache
+    #   uses: actions/cache@v3
+    #   with:
+    #     path: vendor
+    #     key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-php-
+
+    # - name: Install dependencies
+    #   run: composer install --prefer-dist --no-progress
+
+    # 秘密鍵を設置
+    - name: ssh key generate
+      run: |
+        mkdir -p ~/.ssh/
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
 
     # ssh rsync実行
     # -a コピー元のディレクトリを再帰的にオーナー・グループ・パーミッション・タイムスタンプをそのままコピーします。
@@ -35,13 +47,12 @@ jobs:
     # -v 詳細を出力する。
     # -z 圧縮転送
     # --delete 転送元に無いファイルをサーバー側から削除
-    # -e ssh指定（sshpass で SSH_PASSWORD を渡す）
-    # --rsync-path さくらは FreeBSD で rsync が PATH に無いため絶対パスを指定
+    # -e ssh指定
     - name: Deploy
-      run: |
-        rsync -ahvz --delete \
-          --rsync-path=/usr/local/bin/rsync \
-          --exclude=templates_c \
-          --exclude=.DS_Store \
-          -e "sshpass -e ssh -p $SSH_PORT -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" \
-          ./src/ "$SSH_USER@$SSH_HOST:$DEST"
+      run: rsync -ahvz --delete -e "ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" ./src/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/cyancobra4/www/stage/NxPC78/
+
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Run test suite
+    #   run: composer run-script test
