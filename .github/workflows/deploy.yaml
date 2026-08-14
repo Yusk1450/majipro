@@ -1,12 +1,11 @@
-# main ブランチに最新コードが push された際に、
-# 事前に用意した include.txt で指定している必要なファイル、ディレクトリ群のみを
-# preproduction ブランチにコミットする
+# main ブランチに push されたとき、src/ の内容をさくらのレンタルサーバへ配置する
 
-name: Prepare release packages
+name: Deploy to Server
 
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,30 +15,39 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      SSH_HOST: ${{ secrets.SSH_HOST }}
+      SSH_USER: ${{ secrets.SSH_USER || secrets.SSH_USERNAME }}
+      SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
+      DEST: /home/yusk1450/www/majipro/
+
     steps:
-    - uses: actions/checkout@v4
-
-    # - name: Validate composer.json and composer.lock
-    #   run: composer validate --strict
-
-    # - name: Cache Composer packages
-    #   id: composer-cache
-    #   uses: actions/cache@v3
-    #   with:
-    #     path: vendor
-    #     key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-    #     restore-keys: |
-    #       ${{ runner.os }}-php-
-
-    # - name: Install dependencies
-    #   run: composer install --prefer-dist --no-progress
+    - uses: actions/checkout@v5
 
     # 秘密鍵を設置
     - name: ssh key generate
       run: |
-        mkdir -p ~/.ssh/
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        mkdir -p ~/.ssh
+        printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
+
+        echo "host=${SSH_HOST:-未設定} user=${SSH_USER:-未設定} port=${SSH_PORT}"
+        if ! ssh-keygen -y -f ~/.ssh/id_rsa > /dev/null 2>&1; then
+          echo "秘密鍵が空、または形式が不正です。Secrets の SSH_PRIVATE_KEY を確認してください。"
+          exit 1
+        fi
+        echo "秘密鍵の形式: OK"
+
+    # 失敗時に原因が分かるよう、接続とサーバー側の状態を先に確認する
+    - name: Check SSH connection
+      run: |
+        ARGS="-i $HOME/.ssh/id_rsa -p $SSH_PORT -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o BatchMode=yes"
+        ssh $ARGS "$SSH_USER@$SSH_HOST" "pwd"
+        echo "--- 転送先 ---"
+        ssh $ARGS "$SSH_USER@$SSH_HOST" "ls -d $DEST" || echo "転送先が存在しません: $DEST"
+        echo "--- リモートの rsync ---"
+        ssh $ARGS "$SSH_USER@$SSH_HOST" "which rsync" || echo "rsync が PATH にありません"
+        ssh $ARGS "$SSH_USER@$SSH_HOST" "ls -l /usr/local/bin/rsync" || echo "/usr/local/bin/rsync はありません"
 
     # ssh rsync実行
     # -a コピー元のディレクトリを再帰的にオーナー・グループ・パーミッション・タイムスタンプをそのままコピーします。
@@ -49,10 +57,9 @@ jobs:
     # --delete 転送元に無いファイルをサーバー側から削除
     # -e ssh指定
     - name: Deploy
-      run: rsync -ahvz --delete -e "ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" ./src/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/yusk1450/www/majipro/
-
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    # - name: Run test suite
-    #   run: composer run-script test
+      run: |
+        rsync -ahvz --delete \
+          --exclude=templates_c \
+          --exclude=.DS_Store \
+          -e "ssh -i $HOME/.ssh/id_rsa -p $SSH_PORT -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" \
+          ./src/ "$SSH_USER@$SSH_HOST:$DEST"
