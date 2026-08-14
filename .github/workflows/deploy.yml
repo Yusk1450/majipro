@@ -16,6 +16,13 @@ jobs:
       SSH_USER: ${{ secrets.SSH_USER || vars.SSH_USER }}
       SSH_REMOTE_PATH: ${{ secrets.SSH_REMOTE_PATH || vars.SSH_REMOTE_PATH }}
       SSH_PORT: ${{ secrets.SSH_PORT || vars.SSH_PORT || '22' }}
+      SSHPASS: ${{ secrets.SSH_PASSWORD }}
+      SSH_OPTS: >-
+        -o StrictHostKeyChecking=no
+        -o UserKnownHostsFile=/dev/null
+        -o LogLevel=ERROR
+        -o PreferredAuthentications=password,keyboard-interactive
+        -o PubkeyAuthentication=no
 
     steps:
       - name: Checkout
@@ -27,28 +34,52 @@ jobs:
           [ -z "$SSH_HOST" ] && missing="$missing SSH_HOST"
           [ -z "$SSH_USER" ] && missing="$missing SSH_USER"
           [ -z "$SSH_REMOTE_PATH" ] && missing="$missing SSH_REMOTE_PATH"
-          [ -z "${{ secrets.SSH_PASSWORD }}" ] && missing="$missing SSH_PASSWORD"
+          [ -z "$SSHPASS" ] && missing="$missing SSH_PASSWORD"
           if [ -n "$missing" ]; then
             echo "未設定の値があります:$missing"
             echo "SSH_HOST / SSH_USER / SSH_REMOTE_PATH は Repository secrets または Repository variables に設定してください。"
             echo "SSH_PASSWORD は Repository secrets に設定してください。"
             exit 1
           fi
+          echo "REMOTE_DIR=${SSH_REMOTE_PATH%/}" >> "$GITHUB_ENV"
           echo "Deploy target: ${SSH_USER}@${SSH_HOST}:${SSH_REMOTE_PATH} (port ${SSH_PORT})"
 
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass
 
-      - name: Deploy with rsync
+      - name: Prepare remote directory
         run: |
+          sshpass -e ssh -p "$SSH_PORT" $SSH_OPTS "$SSH_USER@$SSH_HOST" "mkdir -p $REMOTE_DIR"
+          sshpass -e ssh -p "$SSH_PORT" $SSH_OPTS "$SSH_USER@$SSH_HOST" "test -w $REMOTE_DIR"
+          echo "リモートディレクトリを確認しました: $REMOTE_DIR"
+
+      # さくらのレンタルサーバは FreeBSD + csh のため、非対話 SSH では
+      # /usr/local/bin が PATH に含まれず rsync が見つからない。絶対パスを特定して渡す。
+      - name: Detect remote rsync
+        run: |
+          for candidate in /usr/local/bin/rsync /usr/bin/rsync /bin/rsync; do
+            if sshpass -e ssh -p "$SSH_PORT" $SSH_OPTS "$SSH_USER@$SSH_HOST" "test -x $candidate"; then
+              echo "REMOTE_RSYNC=$candidate" >> "$GITHUB_ENV"
+              echo "リモートの rsync: $candidate"
+              exit 0
+            fi
+          done
+          echo "リモートに rsync が見つかりませんでした。tar 転送にフォールバックします。"
+
+      - name: Deploy with rsync
+        if: env.REMOTE_RSYNC != ''
+        run: |
+          export RSYNC_RSH="sshpass -e ssh -p $SSH_PORT $SSH_OPTS"
           rsync -avz --delete \
+            --rsync-path="$REMOTE_RSYNC" \
             --exclude 'templates_c/' \
             --exclude '.DS_Store' \
-            -e "sshpass -e ssh -p ${SSH_PORT} \
-              -o StrictHostKeyChecking=no \
-              -o UserKnownHostsFile=/dev/null \
-              -o PreferredAuthentications=password \
-              -o PubkeyAuthentication=no" \
-            src/ "${SSH_USER}@${SSH_HOST}:${SSH_REMOTE_PATH}"
-        env:
-          SSHPASS: ${{ secrets.SSH_PASSWORD }}
+            --timeout=300 \
+            src/ "$SSH_USER@$SSH_HOST:$REMOTE_DIR/"
+
+      - name: Deploy with tar over SSH
+        if: env.REMOTE_RSYNC == ''
+        run: |
+          tar czf - -C src --exclude='templates_c' --exclude='.DS_Store' . \
+            | sshpass -e ssh -p "$SSH_PORT" $SSH_OPTS "$SSH_USER@$SSH_HOST" \
+              "tar xzf - -C $REMOTE_DIR"
