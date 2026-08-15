@@ -8,13 +8,8 @@
 <link rel="stylesheet" href="./css/style.css">
 
 <!-- Meta -->
-{if isset($title) && isset($caption)}
 <meta name="title" content="{$title}" />
 <meta name="description" content="{$caption}" />
-{else}
-<meta name="title" content="【公式】Majicayo Project「怪人カード」" />
-<meta name="description" content="Majicayo Project「怪人カード」の公式サイトになります" />
-{/if}
 <meta name="keywords" content="">
 <meta name="robot" content="index,follow,noarchive">
 <meta name="author" content="Yusk">
@@ -23,15 +18,15 @@
 {if isset($ogp)}
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://yusk1450.com/workdetail.php?id={$id}" />
+<meta property="og:url" content="https://majipro.xyz/" />
 <meta property="og:title" content="{$title}" />
 <meta property="og:description" content="{$caption}" />
-<meta property="og:image" content="https://yusk1450.com/imgs/works/{$ogp}" />
+<meta property="og:image" content="https://majipro.xyz/" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://yusk1450.com/workdetail.php?id={$id}" />
+<meta property="twitter:url" content="https://majipro.xyz/" />
 <meta property="twitter:title" content="{$title}" />
 <meta property="twitter:description" content="{$caption}" />
-<meta property="twitter:image" content="https://yusk1450.com/imgs/works/{$ogp}" />
+<meta property="twitter:image" content="https://majipro.xyz/" />
 {/if}
