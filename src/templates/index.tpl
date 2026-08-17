@@ -1,14 +1,261 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<meta charset="utf-8">
-	<title>{$title}</title>
-{include file='html_head.tpl' title={$title} caption={$caption} ogp=''}
-</head>
-<body class="drawer drawer--right">
-{include file='header.tpl'}
+	<head>
+		<meta charset="utf-8">
+		<title>{$title}</title>
+	{include file='html_head.tpl' title={$title} caption={$caption} ogp=''}
+	</head>
+	<body class="drawer drawer--right">
+		{include file='header.tpl'}
+		<div class="line bg"></div>
+
+		<div class="firstView">
+			<div class="container-fluid">
+				<div class="pc_only firstView">
+					<img src="./imgs/firstView_pc.png">
+				</div>
+				{* <div class="sp_only">
+					<img src="./imgs/firstView_sp.png" alt="firstView">
+				</div> *}
+			</div>
+		</div>
+
+		<div id="news">
+			<div class="bg">
+				<img src="./imgs/news_back.png">
+				<div class="space"></div>
+			</div>
+
+			<div class="container-fluid innerarea">
+				<div class="d-flex">
+					<div class="title">
+						<img src="./imgs/news_title.png" alt="新着一覧">
+					</div>
+					<div class="news_list black_color fs_20">
+						<div class="item">
+							<div class="date fw-regular">2026/08/22</div>
+							<div class="fw-bold">稲沢夏まつり2026にてカード配布</div>
+						</div>
+						<div class="border_line"></div>
+						<div class="item">
+							<div class="date fw-regular">2026/01/01</div>
+							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
+						</div>
+						<div class="border_line"></div>
+						<div class="item">
+							<div class="date fw-regular">2026/01/01</div>
+							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
+						</div>
+						<div class="more_btn">
+							<a href="#" class="d-flex">
+								<div class="gold_color fw-bold">
+									ニュースへ
+								</div>
+								<div class="gold_color">
+									<i class="fas fa-chevron-right"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 
 
-{include file='footer.tpl'}
-</body>
+		<div id="story">
+			<div class="bg">
+				<div class="top">
+					<img src="./imgs/bg_line_top.png">
+				</div>
+				<div class="bottom">
+					<img src="./imgs/bg_line_top.png">
+				</div>
+				<div class="magic">
+					<img src="./imgs/story_back.png">
+				</div>
+				<div class="left_top">
+					<img src="./imgs/story_side.png">
+				</div>
+				<div class="left_bottom">
+					<img src="./imgs/story_side.png">
+				</div>
+				<div class="right_top">
+					<img src="./imgs/story_side.png">
+				</div>
+				<div class="right_bottom">
+					<img src="./imgs/story_side.png">
+				</div>
+			</div>
+
+			<div class="container-fluid innerarea">
+
+				<div class="title">
+					<img src="./imgs/story_title.png" alt="ストーリー">
+				</div>
+
+				<div class="story_text fw-bold fs_24">
+					ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。
+				</div>
+			</div>
+		</div>
+
+		<div id="firstUser">
+			<div class="container-fluid innerarea">
+				<div class="title d-flex">
+					<div class="text">
+						<img src="./imgs/firstUser_title.png" alt="はじめての方へ">
+					</div>
+					<div class="decoration">
+						<img src="./imgs/title_decoration.png">
+					</div>
+				</div>
+
+				<div class="content d-flex">
+					<div class="card">
+						<img src="./imgs/cards/kaijin/16_sutapurazuma.png">
+					</div>
+					<div class="textarea fw-bold">
+						<div class="fs_32">
+							Majicayo 怪人カードとは
+						</div>
+						<div class="fs_32 yellow_color">
+							怪人たちを組み合わせて戦う対戦型<br>カードゲーム！	
+						</div>
+						<div class="fs_24">
+							怪人をフィールドに出して戦わせ、仲間の怪人と<br>「コラボ」してパワーアップ！<br>サポートカードやトリガーカードを使えば、戦況を<br>一気にひっくり返すこともできる！<br><br>自分だけのデッキを作って、個性豊かな怪人たちと<br>一緒にバトルを楽しもう！
+						</div>
+					</div>
+					<div class="card">
+						<img src="./imgs/cards/card_back.png">
+					</div>
+				</div>
+				<div class="more_btn">
+					<a href="#" class="d-flex">
+						<div class="gold_color fw-bold">
+							あそびかた
+						</div>
+						<div class="gold_color">
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card_list">
+			<div class="container-fluid innerarea">
+				<div class="title d-flex">
+					<div class="text">
+						<img src="./imgs/cardList_title.png" alt="カードリスト">
+					</div>
+					<div class="decoration">
+						<img src="./imgs/title_decoration.png">
+					</div>
+				</div>
+				
+				<div class="content">
+					{foreach $cards as $card}
+						{if $card.id >= 11}{break}{/if}
+						<div class="card 
+							{if $card.attribute == "火"}red_glow
+							{elseif $card.attribute == "水"}blue_glow
+							{elseif $card.attribute == "風"}green_glow
+							{elseif $card.attribute == "土"}brown_color
+							{elseif $card.attribute == "無"}gray_color
+						{/if}">
+							<img src="./{$card.image}" alt="{$card.name}">
+						</div>
+					{/foreach}
+				</div>
+				<div class="more_btn">
+					<a href="#" class="d-flex">
+						<div class="gold_color fw-bold">
+							もっと見る
+						</div>
+						<div class="gold_color">
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<div class="container-fluid innerarea">
+				<div class="title">
+					<img src="./imgs/contact_title.png" alt="お問い合わせ">
+				</div>
+				<div class="content black_color fs_20">
+					<div class="form_item">
+						<div class="label d-flex">
+							<div>
+								お名前
+							</div>
+							<div class="red_color fs_12">
+								必須
+							</div>
+						</div>
+						<div class="input">
+							<input type="text" id="name" name="name" placeholder="稲沢太郎">
+						</div>
+					</div>
+
+					<div class="form_item">
+						<div class="label d-flex">
+							<div>
+								ご所属
+							</div>
+						</div>
+						<div class="input">
+							<input type="text" id="company" name="company" placeholder="〇〇株式会社">
+						</div>
+					</div>
+
+					<div class="form_item">
+						<div class="label d-flex">
+							<div>
+								メールアドレス
+							</div>
+							<div class="red_color fs_12">
+								必須
+							</div>
+						</div>
+						<div class="input">
+							<input type="text" id="mail" name="mail" placeholder="name@example.com">
+						</div>
+					</div>
+
+					<div class="form_item">
+						<div class="label d-flex">
+							<div>
+								問い合わせ内容
+							</div>
+							<div class="red_color fs_12">
+								必須
+							</div>
+						</div>
+						{* <div class="input">
+							<input type="" id="genre" name="genre" placeholder="こちらからお選びください">
+						</div> *}
+					</div>
+
+					<div class="form_item">
+						<div class="input">
+							<input type="textarea" id="contents" name="contents" placeholder="お問い合わせ内容をご記入ください。">
+						</div>
+					</div>
+					<div class="submit_btn">
+					送信する
+					</div>
+
+				</div>
+
+				
+
+			</div>
+		</div>
+
+		{include file='footer.tpl'}
+	</body>
 </html>

@@ -1,0 +1,489 @@
+.firstView
+{
+	width               : 100%;
+	height              : auto;
+	margin-bottom       : vw(80, 1440);
+
+	img
+	{
+		width : 100%;
+		height : auto;
+	}
+}
+
+#news
+{
+    position : relative;
+    padding-bottom : vw(75, 1440);
+
+    .bg
+    {
+        position : absolute;
+        top      : 0;
+        left     : 0;
+        z-index : 1;
+
+        width : 100%;
+        height : 100%;
+
+        display        : flex;
+        flex-direction : column;
+
+        img
+        {
+            width : 100%;
+            height :auto;
+            display : block;
+        }
+
+        .space
+        {
+            flex : 1 1 auto;
+            width : 100%;
+            background-image    : url(../imgs/news_back_space.png);
+            background-size     : 100% auto;
+            background-position : top center;
+            background-repeat   : repeat-y;
+        }
+    }
+
+    .innerarea
+    {
+        position : relative;
+        z-index : 2;
+    }
+
+
+    .title
+    {
+
+        width : 225px;
+        height : auto;
+        margin-top: vw(119, 1440);
+        margin-right: vw(65, 1440);
+
+        img
+        {
+            width : 100%;
+            height : auto;
+        }
+    }
+
+    .news_list
+    {
+        margin-top: vw(18, 1440);
+        width : 100%;
+        .item
+        {
+            margin: vw(12, 1440) 0;
+            .date
+            {
+                margin-bottom: vw(11, 1440);
+            
+            }
+        }
+
+        .border_line
+        {
+            width : 100%;
+            background-color: #0C0C08;
+            color: #0C0C08;
+            height: 1px;
+        }
+
+        .more_btn
+        {
+            margin-top: vw(24, 1440);
+            background-color: #0C0C08;
+            border: #FFFFFF 1px solid;
+
+            width: fit-content;
+            margin-left: auto;
+
+            .d-flex
+            {
+                gap: vw(12, 1440);
+                margin: 10px 24px;
+            }
+        }
+    }
+    
+}
+
+#story
+{
+    position : relative;
+    background-color: #0C0C08;
+    padding-bottom : vw(75, 1440);
+
+    .bg
+    {
+
+        height: fit-content;
+        .magic
+        {
+            position : absolute;
+            top      : 50%;
+            left     : 50%;
+            transform: translate(-50%, -50%);
+            width : vw(730, 1440);
+            z-index : 1;
+
+            img
+            {
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .top
+        {
+            position : absolute;
+            top      : 0;
+            left     : 0;
+            z-index : 50;
+
+            width : 100vw;
+
+            img
+            {
+                display : block;
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .bottom
+        {
+            position : absolute;
+            bottom      : 0;
+            left     : 0;
+            transform: rotate(180deg);
+            z-index : 50;
+
+            width : 100vw;
+
+            img
+            {
+                display : block;
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .left_top
+        {
+            position : absolute;
+            top      : 0;
+            left     : vw(24, 1440);
+            z-index : 25;
+
+            width : vw(245, 1440);
+            height : auto;
+
+            img
+            {
+                width : 100% !important;
+                height : auto !important;
+            }
+        }
+
+        .left_bottom
+        {
+            position : absolute;
+            bottom      : 0;
+            left     : vw(24, 1440);
+            z-index : 25;
+
+            transform: rotate(180deg);
+            width : vw(245, 1440);
+            height : auto;
+
+            img
+            {
+                width : 100% !important;
+                height : auto !important;
+            }
+        }
+
+        .right_top
+        {
+            position : absolute;
+            top      : 0;
+            right     : vw(24, 1440);
+            z-index : 25;
+
+            width : vw(245, 1440);
+            height : auto;
+
+            img
+            {
+                width : 100% !important;
+                height : auto !important;
+            }
+        }
+
+        .right_bottom
+        {
+            position : absolute;
+            bottom      : 0;
+            right     : vw(24, 1440);
+            z-index : 25;
+            transform: rotate(180deg);
+            width : vw(245, 1440);
+            height : auto;
+
+            img
+            {
+                width : 100% !important;
+                height : auto !important;
+            }
+        }
+        
+    }
+
+    .innerarea
+    {
+        padding:0  vw(340, 1440);
+        padding-top: vw(80, 1440);
+        padding-bottom: vw(88, 1440);
+        position : relative;
+        z-index : 2;
+    }
+
+    .title
+    {
+        width : 264px;
+        height : auto;
+
+        img
+        {
+            width : 100%;
+            height : auto;
+        }
+    }
+
+    .story_text
+    {
+        margin-top: vw(24, 1440);
+        line-height: 5.0rem;
+    }
+}
+
+
+#firstUser
+{
+    position : relative;
+    overflow-x : hidden;
+    margin-top: vw(97, 1440);
+
+    .title
+    {
+        width : fit-content;
+        height : auto;
+
+        .text
+        {
+            display : block;
+            width : vw(409, 1440);
+            height : auto;
+            margin-right: vw(12, 1440);
+
+            img
+            {
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .decoration
+        {
+            display : block;
+            align-self : center;
+            width : auto;
+            height : auto;
+
+            img
+            {
+                display : block;
+                width : auto;
+                height : vw(71, 1440);
+            }
+        }
+    }
+
+    .content
+    {
+        margin-top: vw(80, 1440);
+        gap: vw(33, 1440);
+
+        .card
+        {
+            flex : 0 0 auto;
+            width : vw(329, 1440);
+            height : auto;
+
+            img
+            {
+                display : block;
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .textarea
+        {
+            width : 100%;
+            height : auto;
+            display: flex;
+            flex-direction: column;
+            gap: vw(32, 1440);
+        }
+    }
+
+}
+
+.card_list
+{
+    position : relative;
+    overflow-x : hidden;
+    margin-top: vw(80, 1440);
+
+    .title
+    {
+        width : fit-content;
+        height : auto;
+
+        .text
+        {
+            display : block;
+            width : vw(304, 1440);
+            height : auto;
+            margin-right: vw(12, 1440);
+
+            img
+            {
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .decoration
+        {
+            display : block;
+            align-self : center;
+            width : auto;
+            height : auto;
+
+            img
+            {
+                display : block;
+                width : auto;
+                height : vw(71, 1440);
+            }
+        }
+    }
+
+    .content
+    {
+        margin-top: vw(42, 1440);
+        gap: vw(20, 1440);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        .card
+        {
+            width : vw(240, 1440);
+            height : auto;
+
+            img
+            {
+                display : block;
+                width : 100%;
+                height : auto;
+            }
+        }
+    }
+}
+
+#contact
+{
+    position : relative;
+    margin-top: vw(80, 1440);
+
+    .title
+    {
+        width : vw(242, 1440);
+        height : auto;
+        margin-bottom: vw(40, 1440);
+
+        img
+        {
+            width : 100%;
+            height : auto;
+        }
+    }
+
+    .content
+    {
+        width : 100%;
+        height : auto;
+        background-color: #FFFFFF;
+        padding: vw(40, 1440);
+        margin-bottom: vw(80, 1440);
+
+        .form_item
+        {
+            width : 100%;
+            margin-bottom: vw(24, 1440);
+        }
+
+        input
+        {
+            width : 100%;
+            height : auto;
+            font-size: 1.25rem;
+            border: 1px solid #D9D9D9;
+            border-radius: 4px;
+            padding: vw(5, 1440) vw(20, 1440);
+            &::placeholder
+            {
+                color: #D9D9D9;
+            }
+        }
+
+        .contents
+        {
+            height: 240px;
+        }
+
+        .label
+        {
+            align-items: center;
+            gap: vw(12, 1440);
+            margin-bottom: vw(12, 1440);
+
+            .red_color
+            {
+               padding: 0 vw(8, 1440);
+               border: 1px solid #FF0000;
+            }
+        }
+
+        .submit_btn
+        {
+            width : 10%;
+            height : auto;
+            background-color: #CBAB71;
+            color: #FFFFFF;
+            padding: vw(10, 1440) vw(20, 1440);
+            margin: 0 auto;
+
+            .text
+            {
+                text-align: center;
+                padding:  vw(10, 1440) vw(47, 1440);
+            }
+        }
+    }
+}
