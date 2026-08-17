@@ -5,7 +5,7 @@
 		<title>{$title}</title>
 	{include file='html_head.tpl' title={$title} caption={$caption} ogp=''}
 	</head>
-	<body class="drawer drawer--right">
+	<body class="drawer drawer--right bg">
 		{include file='header.tpl'}
 		<div class="line bg"></div>
 
@@ -46,16 +46,16 @@
 							<div class="date fw-regular">2026/01/01</div>
 							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
 						</div>
-						<div class="more_btn">
-							<a href="#" class="d-flex">
+						<a href="#" class="more_btn">
+							<div class="d-flex">
 								<div class="gold_color fw-bold">
 									ニュースへ
 								</div>
 								<div class="gold_color">
 									<i class="fas fa-chevron-right"></i>
 								</div>
-							</a>
-						</div>
+							</div>
+						</a>
 					</div>
 
 				</div>
@@ -130,16 +130,16 @@
 						<img src="./imgs/cards/card_back.png">
 					</div>
 				</div>
-				<div class="more_btn">
-					<a href="#" class="d-flex">
+				<a href="#" class="more_btn">
+					<div class="d-flex">
 						<div class="gold_color fw-bold">
 							あそびかた
 						</div>
 						<div class="gold_color">
 							<i class="fas fa-chevron-right"></i>
 						</div>
-					</a>
-				</div>
+					</div>
+				</a>
 			</div>
 		</div>
 
@@ -156,7 +156,6 @@
 				
 				<div class="content">
 					{foreach $cards as $card}
-						{if $card.id >= 11}{break}{/if}
 						<div class="card 
 							{if $card.attribute == "火"}red_glow
 							{elseif $card.attribute == "水"}blue_glow
@@ -168,16 +167,16 @@
 						</div>
 					{/foreach}
 				</div>
-				<div class="more_btn">
-					<a href="#" class="d-flex">
+				<a href="#" class="more_btn">
+					<div class="d-flex">
 						<div class="gold_color fw-bold">
 							もっと見る
 						</div>
 						<div class="gold_color">
 							<i class="fas fa-chevron-right"></i>
 						</div>
-					</a>
-				</div>
+					</div>
+				</a>
 			</div>
 		</div>
 
@@ -235,18 +234,16 @@
 								必須
 							</div>
 						</div>
-						{* <div class="input">
+						<div class="input">
 							<input type="" id="genre" name="genre" placeholder="こちらからお選びください">
-						</div> *}
+						</div>
 					</div>
 
 					<div class="form_item">
-						<div class="input">
-							<input type="textarea" id="contents" name="contents" placeholder="お問い合わせ内容をご記入ください。">
-						</div>
+						<textarea id="contents" name="contents" placeholder="お問い合わせ内容をご記入ください。"></textarea>
 					</div>
 					<div class="submit_btn">
-					送信する
+						送信する
 					</div>
 
 				</div>

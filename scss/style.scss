@@ -5,7 +5,7 @@
 }
 
 // @import "header";
-// @import "footer";
+@import "footer";
 @import "top";
 
 .row
@@ -57,7 +57,7 @@ html, body
 	margin           : 0;
 	padding          : 0;
 	border           : 0px;
-	height           : 100%;
+	min-height       : 100%;
 	color            : #FFFFFF;
 	background-color : #0C0C08;
 	font-size        : 16px;
@@ -94,13 +94,14 @@ h6
 
 a
 {
-	color           : #000;
-	text-decoration : underline;
+	color           : #CBAB71;
+	text-decoration : none;
 }
 
 a:hover
 {
-	color : #C80000;
+	color : #CBAB71;
+	text-decoration : underline;
 }
 
 .container-fluid
@@ -224,6 +225,7 @@ a:hover
 
 .more_btn
 {
+	display: block;
 	margin-top: vw(40, 1440);
 	background-color: #0C0C08;
 	border: #FFFFFF 1px solid;

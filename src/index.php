@@ -11,7 +11,10 @@ $smarty->compile_dir = './templates_c';
 
 $data = file_get_contents('cards_kaijin.json');
 
-$smarty->assign('cards', json_decode($data, true));
+$cards = json_decode($data, true);
+
+shuffle($cards);
+$smarty->assign('cards', array_slice($cards, 0, 10));
 
 $smarty->assign('title', '【公式】Majicayo Project「怪人カード」');
 $smarty->assign('caption', 'Majicayo Project「怪人カード」の公式サイトになります');
