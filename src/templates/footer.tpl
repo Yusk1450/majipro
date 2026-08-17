@@ -1,3 +1,8 @@
+	<div class="footer">
+		<div class="text-center">
+			©2026 Majicayo Project × Nagoya Bunri University App Development Project
+		</div>
+	</div>
 	<script src="jquery-2.1.3.min.js"></script>
 	<script src="./bootstrap/js/bootstrap.min.js"></script>
 	<script src="./js/iscroll.js"></script>

@@ -4,8 +4,53 @@
 	@return calc($px / $baseWidth) * 100vw;
 }
 
-@import "biography";
-@import "works";
+// @import "header";
+// @import "footer";
+@import "top";
+
+.row
+{
+	margin: 0;
+}
+
+.col-md-6
+{
+	padding-left  : 0 !important;
+	padding-right : 0 !important;
+}
+
+.fs_32
+{
+	font-size : 2rem !important;
+
+	@media screen and (max-width: 767px) {
+		font-size : 1.25rem;
+	}
+}
+
+.fs_24
+{
+	font-size : 1.5rem !important;
+
+	@media screen and (max-width: 767px) {
+		font-size : 0.8rem;
+	}
+}
+
+.fs_20
+{
+	font-size : 1.25rem !important;
+
+	@media screen and (max-width: 767px) {
+		font-size : 0.8rem;
+	}
+}
+
+.fs_12
+{
+	font-size : 0.75rem !important;
+}
+
 
 html, body
 {
@@ -13,10 +58,10 @@ html, body
 	padding          : 0;
 	border           : 0px;
 	height           : 100%;
-	color            : #333;
-	background-color : #fff;
-	font-size        : 14px;
-	font-family      : 'Noto Sans Japanese', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+	color            : #FFFFFF;
+	background-color : #0C0C08;
+	font-size        : 16px;
+	font-family      : "M PLUS 1p", sans-serif;
 }
 
 html,
@@ -31,7 +76,7 @@ h4,
 h5,
 h6
 {
-	font-family    : 'Noto Sans Japanese', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+	font-family    : "M PLUS 1p", sans-serif;
 	text-transform : none;
 }
 
@@ -56,4 +101,139 @@ a
 a:hover
 {
 	color : #C80000;
+}
+
+.container-fluid
+{
+	padding: 0;
+}
+
+.innerarea
+{
+	width : 100%;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: vw(80, 1440);
+	padding-right: vw(80, 1440);
+
+	@media screen and (max-width: 767px) {
+		padding-left: vw(80, 360);
+		padding-right: vw(80, 360);
+	}
+}
+
+.bg
+{
+	background-image    : url(../imgs/bg.png);
+	background-size     : 100% auto;
+	background-position : top center;
+	background-repeat   : repeat-y;
+}
+
+.line
+{
+	position            : fixed;
+	top                 : 0;
+	left                : 0;
+	width               : 100vw;
+	height              : 100vh;
+	z-index             : 9999;
+	pointer-events      : none;
+	background-image    : url(../imgs/bg_line.png);
+	background-size     : 100% auto;
+	background-position : top center;
+	background-repeat   : repeat-y;
+}
+
+.pc_only
+{
+	display: block;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.sp_only
+{
+	display: none;
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
+
+.gold_color
+{
+	color: #CBAB71 !important;
+}
+
+.white_color
+{
+	color: #FFFFFF !important;
+}
+
+.black_color
+{
+	color: #0C0C08 !important;
+}
+
+.yellow_color
+{
+	color: #E8C31E !important;
+}
+
+.red_color
+{
+	color: #FF0000 !important;
+}
+
+.green_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #72B16B;
+	-moz-box-shadow: 0px 0px 20px 0px #72B16B;
+	box-shadow: 0px 0px 16px 0px #72B16B;
+}
+
+.brown_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #A88B44;
+	-moz-box-shadow: 0px 0px 16px 0px #A88B44;
+	box-shadow: 0px 0px 16px 0px #A88B44;
+}
+
+.red_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #C67E7F;
+	-moz-box-shadow: 0px 0px 16px 0px #C67E7F;
+	box-shadow: 0px 0px 16px 0px #C67E7F;
+}
+
+.blue_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #7FBEE9;
+	-moz-box-shadow: 0px 0px 16px 0px #7FBEE9;
+	box-shadow: 0px 0px 16px 0px #7FBEE9;
+}
+
+.gray_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #8E8E8D;
+	-moz-box-shadow: 0px 0px 16px 0px #8E8E8D;
+	box-shadow: 0px 0px 16px 0px #8E8E8D;
+}
+
+.more_btn
+{
+	margin-top: vw(40, 1440);
+	background-color: #0C0C08;
+	border: #FFFFFF 1px solid;
+
+	width: fit-content;
+	margin-left: auto;
+
+	.d-flex
+	{
+		gap: vw(12, 1440);
+		margin: 10px 24px;
+	}
 }
