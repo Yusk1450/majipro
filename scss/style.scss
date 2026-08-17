@@ -7,6 +7,7 @@
 // @import "header";
 @import "footer";
 @import "top";
+@import "cardlist";
 
 .row
 {
@@ -223,6 +224,20 @@ a:hover
 	box-shadow: 0px 0px 16px 0px #8E8E8D;
 }
 
+.gold_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #C7A95D;
+	-moz-box-shadow: 0px 0px 16px 0px #C7A95D;
+	box-shadow: 0px 0px 16px 0px #C7A95D;
+}
+
+.black_glow
+{
+	-webkit-box-shadow:0px 0px 16px 0px #696969;
+	-moz-box-shadow: 0px 0px 16px 0px #696969;
+	box-shadow: 0px 0px 16px 0px #696969;
+}
+
 .more_btn
 {
 	display: block;
@@ -237,5 +252,107 @@ a:hover
 	{
 		gap: vw(12, 1440);
 		margin: 10px 24px;
+	}
+}
+
+.home_btn
+{
+	display: block;
+	margin-top: vw(40, 1440);
+	background-color: #0C0C08;
+	border: #FFFFFF 1px solid;
+
+	width: fit-content;
+	margin-right: auto;
+
+	.d-flex
+	{
+		gap: vw(12, 1440);
+		margin: 10px 24px;
+	}
+}
+
+.card_list
+{
+    position : relative;
+    overflow-x : hidden;
+    margin-top: vw(80, 1440);
+
+    .title
+    {
+        width : fit-content;
+        height : auto;
+
+        .text
+        {
+            display : block;
+            width : vw(304, 1440);
+            height : auto;
+            margin-right: vw(12, 1440);
+
+            img
+            {
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .decoration
+        {
+            display : block;
+            align-self : center;
+            width : auto;
+            height : auto;
+
+            img
+            {
+                display : block;
+                width : auto;
+                height : vw(71, 1440);
+            }
+        }
+    }
+
+    .content
+    {
+        margin-top: vw(42, 1440);
+        gap: vw(20, 1440);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        .card_item
+        {
+            position : relative;
+            width : vw(240, 1440);
+            height : auto;
+            cursor : pointer;
+
+            img
+            {
+                display : block;
+                width : 100%;
+                height : auto;
+            }
+
+			&.kaijin:hover
+			{
+				z-index : 200;
+				animation : popup .17s forwards;
+				filter : drop-shadow(0 24px 16px #0C0C08);
+			}
+        }
+    }
+}
+
+@keyframes popup
+{
+	0%
+	{
+		transform : perspective(1300px) translateZ(0);
+	}
+
+	100%
+	{
+		transform : perspective(1300px) translateZ(180px);
 	}
 }

@@ -1,0 +1,32 @@
+.card_list
+{
+    .title
+    {
+        margin-top: vw(40, 1440);
+    }
+
+    .content_title
+    {
+        margin-top: vw(40, 1440);
+        height : vw(48, 1440);
+        width : auto;
+    }
+
+    img
+    {
+        width : auto;
+        height : 100%;
+    }
+
+    .content
+    {
+        margin-top: vw(32, 1440) !important;
+        margin-bottom: vw(80, 1440) !important;
+    }
+
+}
+
+.footer
+{
+    margin-top: 0 !important;
+}

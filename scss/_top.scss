@@ -317,7 +317,7 @@
         margin-top: vw(80, 1440);
         gap: vw(33, 1440);
 
-        .card
+        .card_item
         {
             flex : 0 0 auto;
             width : vw(329, 1440);
@@ -341,69 +341,6 @@
         }
     }
 
-}
-
-.card_list
-{
-    position : relative;
-    overflow-x : hidden;
-    margin-top: vw(80, 1440);
-
-    .title
-    {
-        width : fit-content;
-        height : auto;
-
-        .text
-        {
-            display : block;
-            width : vw(304, 1440);
-            height : auto;
-            margin-right: vw(12, 1440);
-
-            img
-            {
-                width : 100%;
-                height : auto;
-            }
-        }
-
-        .decoration
-        {
-            display : block;
-            align-self : center;
-            width : auto;
-            height : auto;
-
-            img
-            {
-                display : block;
-                width : auto;
-                height : vw(71, 1440);
-            }
-        }
-    }
-
-    .content
-    {
-        margin-top: vw(42, 1440);
-        gap: vw(20, 1440);
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-
-        .card
-        {
-            width : vw(240, 1440);
-            height : auto;
-
-            img
-            {
-                display : block;
-                width : 100%;
-                height : auto;
-            }
-        }
-    }
 }
 
 #contact
@@ -430,7 +367,6 @@
         height : auto;
         background-color: #FFFFFF;
         padding: vw(40, 1440);
-        margin-bottom: vw(80, 1440);
 
         .form_item
         {
@@ -466,6 +402,11 @@
             {
                 color: #D9D9D9;
             }
+        }
+
+        .textarea_item
+        {
+            margin-bottom: vw(12, 1440);
         }
 
         .contents

@@ -2,121 +2,121 @@
   {
     "id": 12,
     "name": "相棒との再会（おかわり）",
-    "image": "",
+    "image": "imgs/cards/support/12_supportcard.png",
     "effect": "「おかわり」と噛むことなく10回叫べば、直前に使用したサポートカードを再度使用できる"
   },
   {
     "id": 2,
     "name": "一旦休み",
-    "image": "",
+    "image": "imgs/cards/support/2_supportcard.png",
     "effect": "相手のフィールドの怪人1体を選んで、（コラボ怪人ごと）相手の手札に戻す"
   },
   {
     "id": 14,
     "name": "運命の拡張",
-    "image": "",
+    "image": "imgs/cards/support/14_supportcard.png",
     "effect": "ライフを3枚墓地に送り、山札からカードを2枚引く"
   },
   {
     "id": 24,
     "name": "エナジードリンク",
-    "image": "",
+    "image": "imgs/cards/support/24_supportcard.png",
     "effect": "山札を上から1枚引き、そのカードが怪人の場合、コスト分の枚数を山札の下からライフに加える"
   },
   {
     "id": 17,
     "name": "加工（分解）",
-    "image": "",
+    "image": "imgs/cards/support/17_supportcard.png",
     "effect": "相手のコラボしている怪人のコラボを解除する。その中から怪人を1体選びそれ以外を破壊する"
   },
   {
     "id": 18,
     "name": "加工（溶接）",
-    "image": "",
+    "image": "imgs/cards/support/18_supportcard.png",
     "effect": "自分のフィールドの怪人をランダムに選択し、相手のフィールドの怪人を属性関係なく選び、コラボさせる"
   },
   {
     "id": 38,
     "name": "強制置換",
-    "image": "",
+    "image": "imgs/cards/support/38_supportcard.png",
     "effect": "相手の手札からランダムで1枚山札の1番下に戻す。その後、山札からカードを1枚引く"
   },
   {
     "id": 34,
     "name": "ギャンブルガチャ",
-    "image": "",
+    "image": "imgs/cards/support/34_supportcard.png",
     "effect": "自分の山札の1番上のカードを公開する。それが怪人の場合、フィールドに召喚するかコラボできる\nトリガーカードだった場合、自分は5ダメージを受ける"
   },
   {
     "id": 4,
     "name": "巧妙な罠",
-    "image": "",
+    "image": "imgs/cards/support/4_supportcard.png",
     "effect": "相手の怪人を1体選び、コラボしている一番上の怪人を残して、残りをすべて手札に戻す"
   },
   {
     "id": 25,
     "name": "最後の望み",
-    "image": "",
+    "image": "imgs/cards/support/25_supportcard.png",
     "effect": "自分の手札を全部捨て、山札から好きなカードを1枚引く"
   },
   {
     "id": 32,
     "name": "三位一体",
-    "image": "",
+    "image": "imgs/cards/support/32_supportcard.png",
     "effect": "このターンのみ、自分のフィールドにいる怪人3枚を属性関係なくコラボして攻撃することができる"
   },
   {
     "id": 31,
     "name": "捨身の一撃",
-    "image": "",
+    "image": "imgs/cards/support/31_supportcard.png",
     "effect": "ライフを5枚墓地に置き、フィールドにあるカードを全て墓地に送る"
   },
   {
     "id": 16,
     "name": "猛々しい盗人",
-    "image": "",
+    "image": "imgs/cards/support/16_supportcard.png",
     "effect": "相手は自身の手札を1枚選び、墓地に捨てる"
   },
   {
     "id": 3,
     "name": "富の再分配",
-    "image": "",
+    "image": "imgs/cards/support/3_supportcard.png",
     "effect": "自分の手札を1枚捨て、相手のフィールドにいるコラボ済みの怪人を1体選び、（コラボ怪人ごと）山札の一番下に置く"
   },
   {
     "id": 33,
     "name": "仲間作り",
-    "image": "",
+    "image": "imgs/cards/support/33_supportcard.png",
     "effect": "フィールドにあるカードと同名のカードを山札から1枚選び、手札に加える。その後山札をシャッフルする"
   },
   {
     "id": 15,
     "name": "復活",
-    "image": "",
+    "image": "imgs/cards/support/15_supportcard.png",
     "effect": "自分のライフを1枚墓地に送り、自分の墓地からコスト5以下の怪人を1体選びフィールドに復活させる"
   },
   {
     "id": 13,
     "name": "プロテイン",
-    "image": "",
+    "image": "imgs/cards/support/13_supportcard.png",
     "effect": "自分のフィールドの怪人1体の戦闘力をこのターン中だけ1000上げる。その後自分の手札を1枚捨て、山札からカードを1枚引く"
   },
   {
     "id": 37,
     "name": "よっ友",
-    "image": "",
+    "image": "imgs/cards/support/37_supportcard.png",
     "effect": "自分のフィールドの怪人1体と、相手のフィールドの怪人1体を対象とする\n次の自分のターンの開始時まで対象にした怪人のうち、どちらか1体が破壊された場合、もう1体も同時に破壊される"
   },
   {
     "id": 5,
     "name": "賄賂",
-    "image": "",
+    "image": "imgs/cards/support/5_supportcard.png",
     "effect": "自分のライフを4枚墓地に置き、自分の山札を見て好きなカードを手札に加える"
   },
   {
     "id": 23,
     "name": "技々いなざわ？",
-    "image": "",
+    "image": "imgs/cards/support/23_supportcard.png",
     "effect": "1ゲームにつき1度のみ使用可能。自分のターンが終了時、再度自分のターンになり攻撃できる"
   }
 ]

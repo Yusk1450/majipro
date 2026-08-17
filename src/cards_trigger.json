@@ -2,140 +2,140 @@
   {
     "id": 2,
     "name": "運命の否定",
-    "image": "",
+    "image": "imgs/cards/trigger/2_triggercard.png",
     "condition": "相手がカードを引いたとき",
     "effect": "そのターン初めてなら、そのカードを墓地に捨てる"
   },
   {
     "id": 20,
     "name": "お小遣い",
-    "image": "",
+    "image": "imgs/cards/trigger/20_triggercard.png",
     "condition": "相手のフィールドに怪人が召喚されたとき",
     "effect": "自分は山札からカードを2枚引く"
   },
   {
     "id": 31,
     "name": "カウンター",
-    "image": "",
+    "image": "imgs/cards/trigger/31_triggercard.png",
     "condition": "相手がカードを引いたとき",
     "effect": "自分のフィールドの怪人1体の戦闘力を相手が引いたカードの枚数分1000上げる"
   },
   {
     "id": 23,
     "name": "刈り取り",
-    "image": "",
+    "image": "imgs/cards/trigger/23_triggercard.png",
     "condition": "相手のトリガーカードが発動したとき",
     "effect": "発動したカード以外の自分と相手のフィールドにあるトリガーカードを破壊する"
   },
   {
     "id": 29,
     "name": "記憶改ざん",
-    "image": "",
+    "image": "imgs/cards/trigger/29_triggercard.png",
     "condition": "相手の手札が4枚以上になったとき",
     "effect": "相手の手札をランダムに1枚捨てる"
   },
   {
     "id": 28,
     "name": "強制共鳴",
-    "image": "",
+    "image": "imgs/cards/trigger/28_triggercard.png",
     "condition": "相手の手札が4枚以上になったとき",
     "effect": "相手の手札を見ることができる"
   },
   {
     "id": 17,
     "name": "ギンナンフィーバー",
-    "image": "",
+    "image": "imgs/cards/trigger/17_triggercard.png",
     "condition": "相手のフィールドの怪人が攻撃してきたとき",
     "effect": "このターンに破壊された怪人は墓地ではなく、ライフへ送る"
   },
   {
     "id": 32,
     "name": "クロスカウンター",
-    "image": "",
+    "image": "imgs/cards/trigger/32_triggercard.png",
     "condition": "相手のフィールドの怪人が攻撃してきたとき",
     "effect": "自分のフィールドのすべての怪人の戦闘力を1000上げる"
   },
   {
     "id": 1,
     "name": "孤高の限界",
-    "image": "",
+    "image": "imgs/cards/trigger/1_triggercard.png",
     "condition": "相手のフィールドの怪人が攻撃してきたとき",
     "effect": "相手の怪人の攻撃を無効にする"
   },
   {
     "id": 4,
     "name": "根性",
-    "image": "",
+    "image": "imgs/cards/trigger/4_triggercard.png",
     "condition": "自分のライフが減少したとき",
     "effect": "ライフが減る量を半分にする（奇数の場合は小数を無視する）"
   },
   {
     "id": 27,
     "name": "細胞分裂",
-    "image": "",
+    "image": "imgs/cards/trigger/27_triggercard.png",
     "condition": "自分のライフが相手のライフよりも多くなったとき",
     "effect": "自分のライフから5枚を墓地に置き、山札からカードを1枚手札に加える"
   },
   {
     "id": 19,
     "name": "サンドフェス（虚像）",
-    "image": "",
+    "image": "imgs/cards/trigger/19_1_triggercard.png",
     "condition": "相手のフィールドの怪人が攻撃してきたとき",
     "effect": "その怪人の攻撃を無効化する"
   },
   {
     "id": 19,
     "name": "サンドフェス（実像）",
-    "image": "",
+    "image": "imgs/cards/trigger/19_2_triggercard.png",
     "condition": "相手のフィールドの怪人が攻撃してきたとき",
     "effect": "その怪人を破壊する"
   },
   {
     "id": 11,
     "name": "自爆スイッチぽちっ⭐︎（死なば諸共）",
-    "image": "",
+    "image": "imgs/cards/trigger/11_triggercard.png",
     "condition": "相手のフィールドに怪人が召喚されたとき",
     "effect": "自分と相手のターンで数えて、3ターン目に自分と相手のフィールドにあるカードをすべて破壊する\nそのとき破壊された怪人のコストの合計が大きい方が墓地から1枚好きなカードを手札に加える"
   },
   {
     "id": 15,
     "name": "剪定ばさみ",
-    "image": "",
+    "image": "imgs/cards/trigger/15_triggercard.png",
     "condition": "相手の攻撃する怪人の属性が土または水のとき",
     "effect": "このターンのみ、その怪人の戦闘力を半分にする"
   },
   {
     "id": 12,
     "name": "代返",
-    "image": "",
+    "image": "imgs/cards/trigger/12_triggercard.png",
     "condition": "相手のフィールドの怪人が攻撃してきたとき",
     "effect": "自分のフィールドにいる怪人を1体選び、手札に戻す"
   },
   {
     "id": 22,
     "name": "鶴の一声",
-    "image": "",
+    "image": "imgs/cards/trigger/22_triggercard.png",
     "condition": "相手がサポートカードもしくはトリガーカードを発動したとき",
     "effect": "そのカードの効果を無効にして破壊する"
   },
   {
     "id": 26,
     "name": "共喰い",
-    "image": "",
+    "image": "imgs/cards/trigger/26_triggercard.png",
     "condition": "相手の怪人がコラボしたとき",
     "effect": "コラボしている怪人をランダムで墓地に送る"
   },
   {
     "id": 18,
     "name": "待った！",
-    "image": "",
+    "image": "imgs/cards/trigger/18_triggercard.png",
     "condition": "相手のフィールドの怪人によって、自分の怪人が墓地に送られたとき",
     "effect": "直前に自分のフィールドから破壊された怪人1体をフィールドに復活させる"
   },
   {
     "id": 16,
     "name": "〇〇会、解散...",
-    "image": "",
+    "image": "imgs/cards/trigger/16_triggercard.png",
     "condition": "相手の怪人がコラボしたとき",
     "effect": "コラボを無効にし、怪人を墓地に捨てる"
   }

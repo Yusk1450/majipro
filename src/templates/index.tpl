@@ -112,7 +112,7 @@
 				</div>
 
 				<div class="content d-flex">
-					<div class="card">
+					<div class="card_item">
 						<img src="./imgs/cards/kaijin/16_sutapurazuma.png">
 					</div>
 					<div class="textarea fw-bold">
@@ -126,7 +126,7 @@
 							怪人をフィールドに出して戦わせ、仲間の怪人と<br>「コラボ」してパワーアップ！<br>サポートカードやトリガーカードを使えば、戦況を<br>一気にひっくり返すこともできる！<br><br>自分だけのデッキを作って、個性豊かな怪人たちと<br>一緒にバトルを楽しもう！
 						</div>
 					</div>
-					<div class="card">
+					<div class="card_item">
 						<img src="./imgs/cards/card_back.png">
 					</div>
 				</div>
@@ -156,7 +156,7 @@
 				
 				<div class="content">
 					{foreach $cards as $card}
-						<div class="card 
+						<div class="card_item kaijin
 							{if $card.attribute == "火"}red_glow
 							{elseif $card.attribute == "水"}blue_glow
 							{elseif $card.attribute == "風"}green_glow
@@ -167,7 +167,7 @@
 						</div>
 					{/foreach}
 				</div>
-				<a href="#" class="more_btn">
+				<a href="cardlist.php" class="more_btn">
 					<div class="d-flex">
 						<div class="gold_color fw-bold">
 							もっと見る
@@ -225,7 +225,7 @@
 						</div>
 					</div>
 
-					<div class="form_item">
+					<div class="form_item textarea_item">
 						<div class="label d-flex">
 							<div>
 								問い合わせ内容
