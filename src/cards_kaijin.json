@@ -2,7 +2,7 @@
   {
     "id": 6,
     "name": "アポロン05（ゼロファイブ）",
-    "image": "imgs/cards/kaijin/6_aporonzerofuaibu.png",
+    "image": "imgs/cards/kaijin/6_aporonzerofuaibu.webp",
     "attribute": "土",
     "cost": 5,
     "power": 2000,
@@ -15,7 +15,7 @@
   {
     "id": 18,
     "name": "アルテミス・ユイソウ",
-    "image": "imgs/cards/kaijin/18_arutemisuyuiso.png",
+    "image": "imgs/cards/kaijin/18_arutemisuyuiso.webp",
     "attribute": "風",
     "cost": 5,
     "power": 3000,
@@ -28,7 +28,7 @@
   {
     "id": 50,
     "name": "アルバ・ジョーカー",
-    "image": "imgs/cards/kaijin/50_arubajoka.png",
+    "image": "imgs/cards/kaijin/50_arubajoka.webp",
     "attribute": "風",
     "cost": 4,
     "power": 2500,
@@ -41,7 +41,7 @@
   {
     "id": 9,
     "name": "イグジット・ピース",
-    "image": "imgs/cards/kaijin/9_igujittopisu.png",
+    "image": "imgs/cards/kaijin/9_igujittopisu.webp",
     "attribute": "火",
     "cost": 6,
     "power": 3000,
@@ -54,7 +54,7 @@
   {
     "id": 35,
     "name": "インソムニア",
-    "image": "imgs/cards/kaijin/35_insomunia.png",
+    "image": "imgs/cards/kaijin/35_insomunia.webp",
     "attribute": "火",
     "cost": 4,
     "power": 2500,
@@ -67,7 +67,7 @@
   {
     "id": 13,
     "name": "ウッドランド・ベヒーモス",
-    "image": "imgs/cards/kaijin/13_uddorandobehimosu.png",
+    "image": "imgs/cards/kaijin/13_uddorandobehimosu.webp",
     "attribute": "土",
     "cost": 6,
     "power": 3500,
@@ -80,7 +80,7 @@
   {
     "id": 27,
     "name": "エアー・ザ・チエリ",
-    "image": "imgs/cards/kaijin/27_eazachieri.png",
+    "image": "imgs/cards/kaijin/27_eazachieri.webp",
     "attribute": "風",
     "cost": 4,
     "power": 2000,
@@ -93,7 +93,7 @@
   {
     "id": 23,
     "name": "エクスティア·グレイス",
-    "image": "imgs/cards/kaijin/23_ekusuteiagureisu.png",
+    "image": "imgs/cards/kaijin/23_ekusuteiagureisu.webp",
     "attribute": "水",
     "cost": 5,
     "power": 2500,
@@ -106,7 +106,7 @@
   {
     "id": 31,
     "name": "エクスプレス・ビヨンド",
-    "image": "imgs/cards/kaijin/31_ekusupuresubiyondo.png",
+    "image": "imgs/cards/kaijin/31_ekusupuresubiyondo.webp",
     "attribute": "土",
     "cost": 5,
     "power": 2500,
@@ -119,7 +119,7 @@
   {
     "id": 4,
     "name": "エレクトリック・ホワイト",
-    "image": "imgs/cards/kaijin/4_erekutorikkuhowaito.png",
+    "image": "imgs/cards/kaijin/4_erekutorikkuhowaito.webp",
     "attribute": "水",
     "cost": 5,
     "power": 3000,
@@ -132,7 +132,7 @@
   {
     "id": 1,
     "name": "華麗なるジョー",
-    "image": "imgs/cards/kaijin/1_kareinarujo.png",
+    "image": "imgs/cards/kaijin/1_kareinarujo.webp",
     "attribute": "風",
     "cost": 10,
     "power": 6000,
@@ -145,7 +145,7 @@
   {
     "id": 48,
     "name": "グラスペリア",
-    "image": "imgs/cards/kaijin/48_gurasuperiapng.png",
+    "image": "imgs/cards/kaijin/48_gurasuperiapng.webp",
     "attribute": "土",
     "cost": 5,
     "power": 3000,
@@ -158,7 +158,7 @@
   {
     "id": 46,
     "name": "グロウノ・ハード",
-    "image": "imgs/cards/kaijin/46_hikatterubue.png",
+    "image": "imgs/cards/kaijin/46_hikatterubue.webp",
     "attribute": "風",
     "cost": 7,
     "power": 3500,
@@ -171,7 +171,7 @@
   {
     "id": 21,
     "name": "孔球将軍",
-    "image": "imgs/cards/kaijin/21_kokyushogun.png",
+    "image": "imgs/cards/kaijin/21_kokyushogun.webp",
     "attribute": "土",
     "cost": 2,
     "power": 1000,
@@ -184,7 +184,7 @@
   {
     "id": 38,
     "name": "コクブ・ハッシャー",
-    "image": "imgs/cards/kaijin/38_kokubuhassha.png",
+    "image": "imgs/cards/kaijin/38_kokubuhassha.webp",
     "attribute": "土",
     "cost": 3,
     "power": 1000,
@@ -197,7 +197,7 @@
   {
     "id": 12,
     "name": "コミュー・ノヴァ",
-    "image": "imgs/cards/kaijin/12_komyunobua.png",
+    "image": "imgs/cards/kaijin/12_komyunobua.webp",
     "attribute": "風",
     "cost": 8,
     "power": 4000,
@@ -210,7 +210,7 @@
   {
     "id": 34,
     "name": "シモマッチマン",
-    "image": "imgs/cards/kaijin/34_shimomatchiman.png",
+    "image": "imgs/cards/kaijin/34_shimomatchiman.webp",
     "attribute": "風",
     "cost": 4,
     "power": 1500,
@@ -223,7 +223,7 @@
   {
     "id": 29,
     "name": "シャローナイト",
-    "image": "imgs/cards/kaijin/29_sharonaito.png",
+    "image": "imgs/cards/kaijin/29_sharonaito.webp",
     "attribute": "風",
     "cost": 3,
     "power": 2000,
@@ -236,7 +236,7 @@
   {
     "id": 40,
     "name": "ショーワショー",
-    "image": "imgs/cards/kaijin/40_showasho.png",
+    "image": "imgs/cards/kaijin/40_showasho.webp",
     "attribute": "土",
     "cost": 4,
     "power": 2500,
@@ -249,7 +249,7 @@
   {
     "id": 3,
     "name": "ジャック・C・スイコー",
-    "image": "imgs/cards/kaijin/3_jakkushisuiko.png",
+    "image": "imgs/cards/kaijin/3_jakkushisuiko.webp",
     "attribute": "水",
     "cost": 6,
     "power": 3500,
@@ -262,7 +262,7 @@
   {
     "id": 16,
     "name": "スタープラズマ",
-    "image": "imgs/cards/kaijin/16_sutapurazuma.png",
+    "image": "imgs/cards/kaijin/16_sutapurazuma.webp",
     "attribute": "風",
     "cost": 5,
     "power": 5000,
@@ -275,7 +275,7 @@
   {
     "id": 11,
     "name": "ストーンプレイズ",
-    "image": "imgs/cards/kaijin/11_sutompureizu.png",
+    "image": "imgs/cards/kaijin/11_sutompureizu.webp",
     "attribute": "水",
     "cost": 3,
     "power": 2000,
@@ -288,7 +288,7 @@
   {
     "id": 2,
     "name": "セイントアーク",
-    "image": "imgs/cards/kaijin/2_seintoaku.png",
+    "image": "imgs/cards/kaijin/2_seintoaku.webp",
     "attribute": "火",
     "cost": 3,
     "power": 2500,
@@ -301,7 +301,7 @@
   {
     "id": 8,
     "name": "ティンバー·ジョー",
-    "image": "imgs/cards/kaijin/8_teimbajo.png",
+    "image": "imgs/cards/kaijin/8_teimbajo.webp",
     "attribute": "土",
     "cost": 2,
     "power": 1500,
@@ -314,7 +314,7 @@
   {
     "id": 26,
     "name": "トップ・オブ・ザ・ビーナス",
-    "image": "imgs/cards/kaijin/26_toppuobuzabinasu.png",
+    "image": "imgs/cards/kaijin/26_toppuobuzabinasu.webp",
     "attribute": "火",
     "cost": 5,
     "power": 2500,
@@ -327,7 +327,7 @@
   {
     "id": 44,
     "name": "Dr.チェーンソー",
-    "image": "imgs/cards/kaijin/44_dokutachienso.png",
+    "image": "imgs/cards/kaijin/44_dokutachienso.webp",
     "attribute": "水",
     "cost": 5,
     "power": 2500,
@@ -340,7 +340,7 @@
   {
     "id": 15,
     "name": "ニクニクシィ・ニモホド",
-    "image": "imgs/cards/kaijin/15_nikunikushinimohodo.png",
+    "image": "imgs/cards/kaijin/15_nikunikushinimohodo.webp",
     "attribute": "火",
     "cost": 3,
     "power": 2000,
@@ -353,7 +353,7 @@
   {
     "id": 32,
     "name": "ニコラ・キャット",
-    "image": "imgs/cards/kaijin/32_nikorakyatto.png",
+    "image": "imgs/cards/kaijin/32_nikorakyatto.webp",
     "attribute": "水",
     "cost": 3,
     "power": 1000,
@@ -366,7 +366,7 @@
   {
     "id": 30,
     "name": "ニワエー・プマージ",
-    "image": "imgs/cards/kaijin/30_niwaepumaji.png",
+    "image": "imgs/cards/kaijin/30_niwaepumaji.webp",
     "attribute": "土",
     "cost": 5,
     "power": 3500,
@@ -379,7 +379,7 @@
   {
     "id": 19,
     "name": "ハルバル・ジュモ君",
-    "image": "imgs/cards/kaijin/19_harubarujumokun.png",
+    "image": "imgs/cards/kaijin/19_harubarujumokun.webp",
     "attribute": "土",
     "cost": 4,
     "power": 2000,
@@ -392,7 +392,7 @@
   {
     "id": 39,
     "name": "バステト・ニア",
-    "image": "imgs/cards/kaijin/39_basutetonia.png",
+    "image": "imgs/cards/kaijin/39_basutetonia.webp",
     "attribute": "火",
     "cost": 5,
     "power": 3000,
@@ -405,7 +405,7 @@
   {
     "id": 43,
     "name": "パラダイス・ランド",
-    "image": "imgs/cards/kaijin/43_paradaisurando.png",
+    "image": "imgs/cards/kaijin/43_paradaisurando.webp",
     "attribute": "土",
     "cost": 4,
     "power": 2500,
@@ -418,7 +418,7 @@
   {
     "id": 45,
     "name": "ヒカッテ・ルーヴェ",
-    "image": "imgs/cards/kaijin/45_hikatterubue.png",
+    "image": "imgs/cards/kaijin/45_hikatterubue.webp",
     "attribute": "風",
     "cost": 3,
     "power": 1000,
@@ -431,7 +431,7 @@
   {
     "id": 25,
     "name": "フジヤマ・インフレイムス",
-    "image": "imgs/cards/kaijin/25_fujiyamainfureimusu.png",
+    "image": "imgs/cards/kaijin/25_fujiyamainfureimusu.webp",
     "attribute": "火",
     "cost": 6,
     "power": 4500,
@@ -444,7 +444,7 @@
   {
     "id": 47,
     "name": "ブライト・エッジ",
-    "image": "imgs/cards/kaijin/47_buraitoezzi.png",
+    "image": "imgs/cards/kaijin/47_buraitoezzi.webp",
     "attribute": "火",
     "cost": 8,
     "power": 5000,
@@ -457,7 +457,7 @@
   {
     "id": 41,
     "name": "ブラックサイドマン",
-    "image": "imgs/cards/kaijin/41_burakkusaidoman.png",
+    "image": "imgs/cards/kaijin/41_burakkusaidoman.webp",
     "attribute": "風",
     "cost": 7,
     "power": 4000,
@@ -470,7 +470,7 @@
   {
     "id": 22,
     "name": "ブルータス・サインモア",
-    "image": "imgs/cards/kaijin/22_burutasusaimmoa.png",
+    "image": "imgs/cards/kaijin/22_burutasusaimmoa.webp",
     "attribute": "水",
     "cost": 5,
     "power": 2000,
@@ -483,7 +483,7 @@
   {
     "id": 7,
     "name": "ベンティリス",
-    "image": "imgs/cards/kaijin/7_benteirisu.png",
+    "image": "imgs/cards/kaijin/7_benteirisu.webp",
     "attribute": "風",
     "cost": 7,
     "power": 4500,
@@ -496,7 +496,7 @@
   {
     "id": 37,
     "name": "マイティー・コーチャー",
-    "image": "imgs/cards/kaijin/37_maiteikocha.png",
+    "image": "imgs/cards/kaijin/37_maiteikocha.webp",
     "attribute": "水",
     "cost": 4,
     "power": 2500,
@@ -509,7 +509,7 @@
   {
     "id": 52,
     "name": "マスアンダー",
-    "image": "imgs/cards/kaijin/52_masuanda.png",
+    "image": "imgs/cards/kaijin/52_masuanda.webp",
     "attribute": "水",
     "cost": 7,
     "power": 3500,
@@ -522,7 +522,7 @@
   {
     "id": 36,
     "name": "マスターフナモン",
-    "image": "imgs/cards/kaijin/36_masutafunamon.png",
+    "image": "imgs/cards/kaijin/36_masutafunamon.webp",
     "attribute": "火",
     "cost": 6,
     "power": 4500,
@@ -535,7 +535,7 @@
   {
     "id": 14,
     "name": "マッスル・ブラキング",
-    "image": "imgs/cards/kaijin/14_massuruburakingu.png",
+    "image": "imgs/cards/kaijin/14_massuruburakingu.webp",
     "attribute": "火",
     "cost": 5,
     "power": 3000,
@@ -548,7 +548,7 @@
   {
     "id": 20,
     "name": "ムービングアロー",
-    "image": "imgs/cards/kaijin/20_mubinguaro.png",
+    "image": "imgs/cards/kaijin/20_mubinguaro.webp",
     "attribute": "水",
     "cost": 6,
     "power": 3000,
@@ -561,7 +561,7 @@
   {
     "id": 5,
     "name": "メシア・クラウン",
-    "image": "imgs/cards/kaijin/5_meshiakuraun.png",
+    "image": "imgs/cards/kaijin/5_meshiakuraun.webp",
     "attribute": "土",
     "cost": 4,
     "power": 2500,
@@ -574,7 +574,7 @@
   {
     "id": 28,
     "name": "メナ・ケイ",
-    "image": "imgs/cards/kaijin/28_menakei.png",
+    "image": "imgs/cards/kaijin/28_menakei.webp",
     "attribute": "水",
     "cost": 4,
     "power": 3000,
@@ -587,7 +587,7 @@
   {
     "id": 42,
     "name": "モールド・ドレイク",
-    "image": "imgs/cards/kaijin/42_morudodoreiku.png",
+    "image": "imgs/cards/kaijin/42_morudodoreiku.webp",
     "attribute": "風",
     "cost": 3,
     "power": 2000,
@@ -600,7 +600,7 @@
   {
     "id": 33,
     "name": "モッコリーム卿",
-    "image": "imgs/cards/kaijin/33_mokkorimukyo.png",
+    "image": "imgs/cards/kaijin/33_mokkorimukyo.webp",
     "attribute": "土",
     "cost": 5,
     "power": 3000,
@@ -613,7 +613,7 @@
   {
     "id": 53,
     "name": "ライトイーター",
-    "image": "imgs/cards/kaijin/53_raitoita.png",
+    "image": "imgs/cards/kaijin/53_raitoita.webp",
     "attribute": "火",
     "cost": 3,
     "power": 1500,
@@ -626,7 +626,7 @@
   {
     "id": 51,
     "name": "ラクト・コマンダー",
-    "image": "imgs/cards/kaijin/51_rakutokomanda.png",
+    "image": "imgs/cards/kaijin/51_rakutokomanda.webp",
     "attribute": "水",
     "cost": 6,
     "power": 3500,
@@ -639,7 +639,7 @@
   {
     "id": 24,
     "name": "リアル・D・衛門",
-    "image": "imgs/cards/kaijin/24_riarudeiemon.png",
+    "image": "imgs/cards/kaijin/24_riarudeiemon.webp",
     "attribute": "無",
     "cost": 9,
     "power": 3000,
@@ -652,7 +652,7 @@
   {
     "id": 49,
     "name": "リスペクト・ローズ",
-    "image": "imgs/cards/kaijin/49_risupekutorozu.png",
+    "image": "imgs/cards/kaijin/49_risupekutorozu.webp",
     "attribute": "水",
     "cost": 6,
     "power": 3500,
@@ -665,7 +665,7 @@
   {
     "id": 17,
     "name": "レガシィ・ケンマ",
-    "image": "imgs/cards/kaijin/17_regashikemma.png",
+    "image": "imgs/cards/kaijin/17_regashikemma.webp",
     "attribute": "火",
     "cost": 6,
     "power": 3500,
@@ -678,7 +678,7 @@
   {
     "id": 10,
     "name": "レトロギア",
-    "image": "imgs/cards/kaijin/10_retorogia.png",
+    "image": "imgs/cards/kaijin/10_retorogia.webp",
     "attribute": "火",
     "cost": 5,
     "power": 3500,

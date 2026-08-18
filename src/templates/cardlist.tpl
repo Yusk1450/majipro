@@ -60,7 +60,7 @@
                     <img src="./imgs/trigger_title.png" alt="トリガーカード">
                 </div>
 
-                <div class="content">
+                <div class="content trigger">
                     {foreach $trigger_cards as $card}
 						<div class="card_item black_glow">
 							<img src="./{$card.image}" alt="{$card.name}">

@@ -4,10 +4,10 @@
 	@return calc($px / $baseWidth) * 100vw;
 }
 
-// @import "header";
 @import "footer";
 @import "top";
 @import "cardlist";
+@import "details";
 
 .row
 {

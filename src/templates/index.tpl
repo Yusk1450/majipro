@@ -113,7 +113,7 @@
 
 				<div class="content d-flex">
 					<div class="card_item">
-						<img src="./imgs/cards/kaijin/16_sutapurazuma.png">
+						<img src="./imgs/cards/kaijin/16_sutapurazuma.webp">
 					</div>
 					<div class="textarea fw-bold">
 						<div class="fs_32">
@@ -127,7 +127,7 @@
 						</div>
 					</div>
 					<div class="card_item">
-						<img src="./imgs/cards/card_back.png">
+						<img src="./imgs/cards/card_back.webp">
 					</div>
 				</div>
 				<a href="#" class="more_btn">
