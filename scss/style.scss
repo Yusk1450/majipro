@@ -272,6 +272,21 @@ a:hover
 	}
 }
 
+.back_btn
+{
+	display: block;
+	background-color: #0C0C08;
+	border: #FFFFFF 1px solid;
+
+	width: 100%;
+
+	.d-flex
+	{
+		gap: vw(12, 1440);
+		margin: 10px 24px;
+	}
+}
+
 .card_list
 {
     position : relative;
@@ -323,6 +338,7 @@ a:hover
         .card_item
         {
             position : relative;
+            align-self : start;
             width : vw(240, 1440);
             height : auto;
             cursor : pointer;
@@ -334,7 +350,7 @@ a:hover
                 height : auto;
             }
 
-			&.kaijin:hover
+			&:hover
 			{
 				z-index : 200;
 				animation : popup .17s forwards;

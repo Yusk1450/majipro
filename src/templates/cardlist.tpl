@@ -32,15 +32,15 @@
 				
 				<div class="content">
 					{foreach $kaijin_cards as $card}
-						<div class="card_item kaijin
+						<a href="details.php?id={$card.id}" class="card_item kaijin
 							{if $card.attribute == "火"}red_glow
 							{elseif $card.attribute == "水"}blue_glow
 							{elseif $card.attribute == "風"}green_glow
-							{elseif $card.attribute == "土"}brown_color
-							{elseif $card.attribute == "無"}gray_color
+							{elseif $card.attribute == "土"}brown_glow
+							{elseif $card.attribute == "無"}gray_glow
 						{/if}">
 							<img src="./{$card.image}" alt="{$card.name}">
-						</div>
+						</a>
 					{/foreach}
 				</div>
 

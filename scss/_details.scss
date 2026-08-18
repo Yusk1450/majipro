@@ -2,13 +2,15 @@
 {
     padding-top: vw(80, 1440);
 
-    .d-flex
+    .card_container
     {
         justify-content : space-between;
     }
 
     .card_item
     {
+        flex : 0 0 vw(400, 1440);
+        align-self : flex-start;
         width : vw(400, 1440);
         height : auto;
 
@@ -16,40 +18,166 @@
         {
             width : 100%;
             height : auto;
+            display : block;
         }
+    }
+
+    .info
+    {
+        flex : 1 1 auto;
+        width : auto;
+        margin-left: vw(80, 1440);
     }
 
     .name
     {
         width : vw(800, 1440);
-        height : auto;
         position : relative;
 
         .bg
         {
-            position : absolute;
-            top      : 0;
-            left     : 0;
-            z-index : 1;
-
             width : 100%;
-            height : 100%;
-
-            display        : flex;
-            flex-direction : column;
+            height : auto;
+            background-image : none;
 
             img
             {
                 width : 100%;
-                height :auto;
+                height : auto;
                 display : block;
             }
         }
 
-        .company_name
+        .name_detail
         {
+            position : absolute;
+            top : 0;
+            left : 0;
+            z-index : 2;
+            width : 100%;
 
-            
+            .company_name_bg
+            {
+                border: 2px solid #0c0c08;
+                margin: vw(16, 1440) 0 vw(4, 1440) vw(20, 1440);
+                width: fit-content;
+
+                .company_name
+                {
+                    padding : vw(2, 1440) vw(12, 1440);
+                    background-color : #0C0C08;
+                    border: 2px solid #CBAB71;
+                }
+            }
+
+            .kaijin_name
+            {
+                margin-left: vw(24, 1440);
+            }
+        }
+    }
+
+    .kaijin_detail
+    {
+        width : 100%;
+        border: 2px solid #CBAB71;
+        height: auto;
+        padding-left: vw(24, 1440);
+        padding-right: vw(40, 1440);
+
+        .item
+        {
+            padding-top: vw(32, 1440);
+            width: 100%;
+            height: fit-content;
+            justify-content: flex-start;
+
+            .subject
+            {
+                flex-shrink: 0;
+                width: 148px;
+                height: auto;
+                position: relative;
+
+                .subject_title
+                {
+                    position: absolute;
+                    top: 2px;
+                    left: 24px;
+                    z-index: 2;
+                }
+                img
+                {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+            .detail_item
+            {
+                flex : 1 1 auto;
+                min-width : 0;
+                margin-left: vw(32, 1440);
+            }
+
+            .detail_border
+            {
+                width : 100%;
+                box-sizing : border-box;
+                padding: vw(12, 1440);
+                border: 1px solid #656565;
+            }
+
+        }
+        .item:last-of-type
+        {
+            padding-bottom: vw(24, 1440);
+        }
+    }
+
+    .link
+    {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: vw(96, 1440);
+        margin-bottom: vw(8, 1440);
+
+        img
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            padding: vw(15, 1440) vw(20, 1440);
+
+            i
+            {
+                font-size: vw(40, 1440);
+            }
+        }
+    }
+
+    .btns
+    {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: vw(38, 1440);
+        gap: vw(24, 1440);
+        flex-direction: column;
+        align-items: center;
+
+        .home
+        {
+            gap: vw(28, 1440);
         }
     }
 }
