@@ -127,6 +127,7 @@
             left     : 50%;
             transform: translate(-50%, -50%);
             width : vw(730, 1440);
+            max-width: 730px;
             z-index : 1;
 
             img
@@ -179,8 +180,9 @@
             z-index : 25;
 
             width : vw(245, 1440);
+            max-width: 245px;
             height : auto;
-
+            max-width: 245px;
             img
             {
                 width : 100% !important;
@@ -198,7 +200,7 @@
             transform: rotate(180deg);
             width : vw(245, 1440);
             height : auto;
-
+            max-width: 245px;
             img
             {
                 width : 100% !important;
@@ -215,7 +217,7 @@
 
             width : vw(245, 1440);
             height : auto;
-
+            max-width: 245px;
             img
             {
                 width : 100% !important;
@@ -232,7 +234,7 @@
             transform: rotate(180deg);
             width : vw(245, 1440);
             height : auto;
-
+            max-width: 245px;
             img
             {
                 width : 100% !important;
@@ -244,7 +246,8 @@
 
     .innerarea
     {
-        padding:0  vw(340, 1440);
+        padding-left: min(340px, vw(340, 1440));
+        padding-right: min(340px, vw(340, 1440));
         padding-top: vw(80, 1440);
         padding-bottom: vw(88, 1440);
         position : relative;
@@ -286,6 +289,7 @@
         {
             display : block;
             width : vw(409, 1440);
+            max-width: 409px;
             height : auto;
             margin-right: vw(12, 1440);
 
@@ -320,7 +324,9 @@
         .card_item
         {
             flex : 0 0 auto;
+            align-self : flex-start;
             width : vw(329, 1440);
+            max-width: 329px;
             height : auto;
 
             img
@@ -351,6 +357,7 @@
     .title
     {
         width : vw(242, 1440);
+        max-width: 242px;
         height : auto;
         margin-bottom: vw(40, 1440);
 

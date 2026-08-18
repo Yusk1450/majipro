@@ -116,8 +116,8 @@ a:hover
 	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: vw(80, 1440);
-	padding-right: vw(80, 1440);
+	padding-left: min(80px, vw(80, 1440));
+	padding-right: min(80px, vw(80, 1440));
 
 	@media screen and (max-width: 767px) {
 		padding-left: vw(80, 360);
@@ -302,8 +302,10 @@ a:hover
         {
             display : block;
             width : vw(304, 1440);
+            max-width: 304px;
             height : auto;
             margin-right: vw(12, 1440);
+			max-width: 304px;
 
             img
             {
@@ -339,7 +341,7 @@ a:hover
         {
             position : relative;
             align-self : start;
-            width : vw(240, 1440);
+            width : 100%;
             height : auto;
             cursor : pointer;
 

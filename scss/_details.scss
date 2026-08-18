@@ -12,6 +12,7 @@
         flex : 0 0 vw(400, 1440);
         align-self : flex-start;
         width : vw(400, 1440);
+        max-width: 400px;
         height : auto;
 
         img
@@ -33,6 +34,7 @@
     {
         width : vw(800, 1440);
         position : relative;
+        max-width: 800px;
 
         .bg
         {
@@ -161,7 +163,7 @@
 
             i
             {
-                font-size: vw(40, 1440);
+                font-size: min(vw(40, 1440), 40px);
             }
         }
     }
