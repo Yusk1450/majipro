@@ -1,0 +1,378 @@
+#howtoplay
+{
+    .title
+    {
+        display : block;
+        width : vw(264, 1440);
+        max-width: 264px;
+        height : auto;
+        margin : vw(40, 1440) 0;
+
+        img
+        {
+            width : 100%;
+            height : auto;
+        }
+    }
+
+    .howtoplay_movie
+    {
+        width : 100%;
+        height : auto;
+        margin-bottom : vw(80, 1440);
+
+    }
+
+    .card_genre
+    {
+        width : 100%;
+        height : auto;
+        margin-bottom : vw(64, 1440);
+        background-color : #FFFFFF;
+        padding : vw(24, 1440) vw(24, 1440) vw(80, 1440) vw(24, 1440);
+        position : relative;
+
+        .magical_bg
+        {
+            position : absolute;
+            top : 50%;
+            left : 50%;
+            transform : translate(-50%, -50%);
+            z-index : 1;
+
+            width : vw(955, 1440);
+            max-width : 955px;
+            height : auto;
+
+            img
+            {
+                width : 100%;
+                height : auto;
+                display : block;
+            }
+        }
+
+        .content
+        {
+            position : relative;
+            z-index : 2;
+        }
+
+        .subject_title
+        {
+            margin-top : 0;
+            margin-bottom : vw(24, 1440);
+        }
+
+        .kaijin_cards
+        {
+            margin-top : vw(40, 1440);
+
+            .card_text
+            {
+                flex : 1 1 auto;
+                width : 100%;
+                margin-right: 8px;
+
+                .title
+                {
+                    width : vw(225, 1440);
+                    max-width : 225px;
+                    height : auto;
+                    margin-top: vw(24, 1440);
+
+                    img
+                    {
+                        width : 100%;
+                        height : auto;
+                    }
+                }
+
+                .details
+                {
+                    margin-top: vw(24, 1440);
+                    gap : vw(64, 1440);
+                    .detail_container
+                    {
+                        flex : 1 1 auto;
+                        width : 100%;
+                        .detail_item
+                        {
+                            flex : 1 1 auto;
+                            width : 100%;
+                            margin-bottom: vw(24, 1440);
+
+                            .number
+                            {
+                                width : 33px;
+                                height : 33px;
+                                display : flex;
+                                justify-content : center;
+                                align-items : center;
+                                border-radius : 999px;
+                                margin-right: vw(8, 1440);
+                                margin-bottom: vw(12, 1440);
+    
+                                background-color: #C67E7F;
+                            }
+    
+                        }
+                    }
+                }
+            }
+
+            .card_detail
+            {
+                width : vw(408, 1440);
+                max-width : 408px;
+                height : auto;
+                flex : 0 0 vw(408, 1440);
+
+                img
+                {
+                    width : 100%;
+                    height : auto;
+                }
+            }
+
+        }
+
+        .support_trigger_cards_container
+        {
+            gap : vw(24, 1440);
+        }
+
+        .support_trigger_cards
+        {
+            flex : 1 1 auto;
+            width : 100%;
+            margin-right: 8px;
+            gap : vw(6, 1440);
+
+            .card_text
+            {
+                flex : 1 1 auto;
+                width : 100%;
+
+                .title
+                {
+                    width : vw(266, 1440);
+                    max-width : 266px;
+                    height : auto;
+                    margin-top: 0;
+                }
+
+                .detail_item
+                {
+                    flex : 1 1 auto;
+                    width : 100%;
+                    margin-top: vw(24, 1440);
+
+                    .number
+                    {
+                        width : 33px;
+                        height : 33px;
+                        display : flex;
+                        justify-content : center;
+                        align-items : center;
+                        border-radius : 999px;
+                        margin-right: vw(8, 1440);
+
+                        background-color: #C67E7F;
+                    }
+
+                }
+            }
+
+            .card_detail
+            {
+                width : vw(330, 1440);
+                max-width : 330px;
+                height : auto;
+                flex : 0 0 vw(330, 1440);
+                img
+                {
+                    width : 100%;
+                    height : auto;
+                }
+            }
+        }
+    }
+
+    .subject_title
+    {
+        position : relative;
+        width : 342px;   
+        margin-bottom : vw(40, 1440);       
+        margin : vw(40, 1440) 0;
+
+        .subject_bg
+        {
+            width : 100%;
+
+            img
+            {
+                display : block;
+                width : 100%;
+                height : auto;
+            }
+        }
+
+        .text
+        {
+            position : absolute;
+            top : 50%;
+            left : 10px;
+            transform : translateY(-50%);
+        }
+    }
+
+    .battle_state
+    {
+        margin-bottom : vw(80, 1440);
+        .battle_state_title
+        {
+            position : relative;
+            .bg
+            {
+                width : vw(818, 1440);
+                max-width : 818px;
+                height : auto;
+                margin: 0 auto;
+                img
+                {
+                    width : 100%;
+                    height : auto;
+                }
+            }
+
+            .text
+            {
+                position : absolute;
+                top : 50%;
+                left : 50%;
+                transform : translate(-50%, -50%);
+            }
+        }
+
+        .decks
+        {
+            width : 100%;
+            height : auto;
+            margin-top : vw(32, 1440);
+            margin-bottom : vw(80, 1440);
+
+            img
+            {
+                width : 100%;
+                height : auto;
+            }
+        }
+    }
+
+    .battle_flow
+    {
+        
+        .turn_flow
+        {
+            width : 100%;
+            height : auto;
+            margin-top : vw(24, 1440);
+            margin-bottom : vw(80, 1440);
+
+            img
+            {
+                width : 100%;
+                height : auto;
+            }
+        }
+        .flow_container
+        {
+            width : 100%;
+            height : auto;
+            margin-top : vw(80, 1440);
+            margin-bottom : vw(40, 1440);
+
+            .flow_item
+            {
+                width : 100%;
+                height : auto;
+                margin-bottom : vw(40, 1440);
+
+                .detail_container
+                {
+                    flex : 1 1 auto;
+                    width : 100%;
+                    height : auto;
+                    margin-right : vw(80, 1440);
+                    margin-left : vw(24, 1440);
+
+                    .item
+                    {
+                        width : 100%;
+                        height : auto;
+
+
+                        .subject
+                        {
+                            width : 100%;
+                            height : auto;
+                            margin-bottom : vw(40, 1440);
+                            position : relative;
+
+                        }
+
+                        .bg
+                        {
+                            width : 587px;
+                            height : auto;
+
+                            img
+                            {
+                                width : 100%;
+                                height : auto;
+                            }
+                        }
+
+                        .text
+                        {
+                            position : absolute;
+                            top : 50%;
+                            left : 10px;
+                            transform : translateY(-50%);
+                        }
+                    }
+                }
+
+                .scene_image
+                {
+                    width : vw(338, 1440);
+                    max-width : 338px;
+                    height : auto;
+                    flex : 0 0 vw(338, 1440);
+
+                    img
+                    {
+                        width : 100%;
+                        height : auto;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .catchphrase
+    {
+        width : 100%;
+        height : auto;
+
+        img
+        {
+            width : 100%;
+            height : auto;
+        }
+
+    }
+    
+}

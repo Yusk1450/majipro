@@ -7,7 +7,6 @@
 	</head>
 	<body class="drawer drawer--right bg">
 		{include file='header.tpl'}
-		<div class="line bg"></div>
 
         <div id="details">
             <div class="container-fluid innerarea">

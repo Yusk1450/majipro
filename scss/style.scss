@@ -111,6 +111,22 @@ a:hover
 	padding: 0;
 }
 
+.youtube
+{
+    position    : relative;
+    width       : 100%;
+    padding-top : 56.25%;
+
+	iframe
+	{
+		position : absolute;
+		top      : 0;
+		right    : 0;
+		width    : 100% !important;
+		height   : 100% !important;	
+	}
+}
+
 .innerarea
 {
 	width : 100%;
@@ -306,7 +322,7 @@ a:hover
             max-width: 304px;
             height : auto;
             margin-right: vw(12, 1440);
-			max-width: 304px;
+
 
             img
             {
