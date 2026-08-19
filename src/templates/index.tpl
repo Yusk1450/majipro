@@ -130,7 +130,7 @@
 						<img src="./imgs/cards/card_back.webp">
 					</div>
 				</div>
-				<a href="#" class="more_btn">
+				<a href="./howtoplay.php" class="more_btn">
 					<div class="d-flex">
 						<div class="gold_color fw-bold">
 							あそびかた
@@ -167,7 +167,7 @@
 						</a>
 					{/foreach}
 				</div>
-				<a href="cardlist.php" class="more_btn">
+				<a href="./cardlist.php" class="more_btn">
 					<div class="d-flex">
 						<div class="gold_color fw-bold">
 							もっと見る

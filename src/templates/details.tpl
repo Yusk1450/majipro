@@ -135,7 +135,7 @@
 			{/if}
 			
 			<div class="btns d-flex justify-content-center">
-				<a href="cardlist.php" class="back_btn">
+				<a href="./cardlist.php" class="back_btn">
 					<div class="d-flex">
 						<div class="gold_color">
 							<i class="fas fa-chevron-left"></i>
@@ -145,7 +145,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="index.php" class="back_btn">
+				<a href="./index.php" class="back_btn">
 					<div class="d-flex home">
 						<div class="gold_color">
 							<i class="fas fa-chevron-left"></i>

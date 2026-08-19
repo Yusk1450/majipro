@@ -11,7 +11,7 @@
 
 		<div class="card_list">
 			<div class="container-fluid innerarea">
-                <a href="index.php" class="home_btn">
+                <a href="./index.php" class="home_btn">
                     <div class="d-flex">
                         <div class="gold_color">
                             <i class="fas fa-chevron-left"></i>
