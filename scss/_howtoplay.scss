@@ -1,6 +1,11 @@
 #howtoplay
 {
     padding-top: vw(80, 1440);
+
+    @media screen and (max-width: 767px) {
+        padding-top: vw(80, 393);
+    }
+
     .fs_32
     {
         @media screen and (max-width: 767px) {

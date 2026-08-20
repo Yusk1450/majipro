@@ -1,12 +1,11 @@
 .card_list
 {
-    .title
+    #card_list
     {
-        margin-top: vw(40, 1440);
-
-		@media screen and (max-width: 767px) {
-			margin-top: vw(40, 393);
-		}
+        padding-top: vw(40, 1440);
+        @media screen and (max-width: 767px) {
+            padding-top: vw(40, 393);
+        }
     }
 
     .content_title

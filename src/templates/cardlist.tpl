@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </a>
-                <div class="title">
+                <div class="title" id="card_list">
                     <div class="text">
                         <img src="./imgs/cardList_title.png" alt="カードリスト">
                     </div>
