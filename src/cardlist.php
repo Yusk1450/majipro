@@ -17,9 +17,9 @@ $smarty->assign('kaijin_cards', json_decode($kaijin_data, true));
 $smarty->assign('support_cards', json_decode($support_data, true));
 $smarty->assign('trigger_cards', json_decode($trigger_data, true));
 
-$smarty->assign('title', '【公式】Majicayo Project「怪人カード」');
+$smarty->assign('title', 'カード一覧 | 【公式】Majicayo Project「怪人カード」');
 $smarty->assign('caption', 'Majicayo Project「怪人カード」の公式サイトになります');
-$smarty->assign('ogp', '');
+$smarty->assign('ogp', '/imgs/ogp.png');
 
 $smarty->display('cardlist.tpl');
 

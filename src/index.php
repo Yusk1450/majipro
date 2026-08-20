@@ -18,7 +18,7 @@ $smarty->assign('cards', array_slice($cards, 0, 10));
 
 $smarty->assign('title', '【公式】Majicayo Project「怪人カード」');
 $smarty->assign('caption', 'Majicayo Project「怪人カード」の公式サイトになります');
-$smarty->assign('ogp', '');
+$smarty->assign('ogp', '/imgs/ogp.png');
 
 $smarty->display('index.tpl');
 

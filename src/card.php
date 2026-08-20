@@ -27,8 +27,8 @@ if ($card == null) {
 }
 
 $smarty->assign('card', $card);
-$smarty->assign('title', $card['name'] . ' | Majicayo Project「怪人カード」');
+$smarty->assign('title', $card['name'] . ' | 【公式】Majicayo Project「怪人カード」');
 $smarty->assign('caption', $card['name'] . 'のカード説明です。');
-$smarty->assign('ogp', '');
+$smarty->assign('ogp', $card['image']);
 
 $smarty->display('details.tpl');

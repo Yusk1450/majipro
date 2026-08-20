@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://majipro.xyz/favicon.ico">
 <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
@@ -13,9 +14,9 @@
 <!-- Meta -->
 <meta name="title" content="{$title}" />
 <meta name="description" content="{$caption}" />
-<meta name="keywords" content="">
+<meta name="keywords" content="愛知,稲沢,カードバトル,名古屋文理大学,NBU,アプリ開発プロジェクト,アプリ開発,majicayo,まじかよ,majipro,怪人カード">
 <meta name="robot" content="index,follow,noarchive">
-<meta name="author" content="Yusk">
+<meta name="author" content="nose">
 <meta name="language" content="ja">
 
 {if isset($ogp)}
@@ -24,12 +25,12 @@
 <meta property="og:url" content="https://majipro.xyz/" />
 <meta property="og:title" content="{$title}" />
 <meta property="og:description" content="{$caption}" />
-<meta property="og:image" content="https://majipro.xyz/" />
+<meta property="og:image" content="https://majipro.xyz/{$ogp}" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://majipro.xyz/" />
 <meta property="twitter:title" content="{$title}" />
 <meta property="twitter:description" content="{$caption}" />
-<meta property="twitter:image" content="https://majipro.xyz/" />
+<meta property="twitter:image" content="https://majipro.xyz/{$ogp}" />
 {/if}

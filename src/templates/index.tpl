@@ -243,7 +243,13 @@
 							</div>
 						</div>
 						<div class="input">
-							<input type="" id="genre" name="genre" placeholder="こちらからお選びください">
+							<select id="genre" name="genre" required>
+								<option value="" selected disabled>こちらからお選びください</option>
+								<option value="1">怪人カードの配布について</option>
+								<option value="2">怪人カードのルールについて</option>
+								<option value="3">怪人参加（協賛）について</option>
+								<option value="4">その他</option>
+							</select>
 						</div>
 					</div>
 
