@@ -26,7 +26,7 @@
 	font-size : 2rem !important;
 
 	@media screen and (max-width: 767px) {
-		font-size : 1.25rem !important;
+		font-size : 1.5rem !important;
 	}
 }
 
@@ -182,17 +182,17 @@ a:hover
 
 .pc_only
 {
-	display: block;
+	display: block !important;
 	@media screen and (max-width: 767px) {
-		display: none;
+		display: none !important;
 	}
 }
 
 .sp_only
 {
-	display: none;
+	display: none !important;
 	@media screen and (max-width: 767px) {
-		display: block;
+		display: block !important;
 	}
 }
 
@@ -326,6 +326,10 @@ a:hover
 	{
 		gap: 12px;
 		margin: 10px 24px;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-top: vw(40, 393);
 	}
 }
 

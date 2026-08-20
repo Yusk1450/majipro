@@ -4,6 +4,10 @@
 	height              : auto;
 	margin-bottom       : vw(80, 1440);
 
+    @media screen and (max-width: 767px) {
+        margin-bottom: vw(40, 393);
+    }
+
 	img
 	{
 		width : 100%;
@@ -14,7 +18,11 @@
 #news
 {
     position : relative;
-    padding-bottom : vw(75, 1440);
+    padding-bottom : vw(72, 1440);
+
+    @media screen and (max-width: 767px) {
+        padding-bottom : 0;
+    }
 
     .bg
     {
@@ -29,10 +37,16 @@
         display        : flex;
         flex-direction : column;
 
+        @media screen and (max-width: 767px) {
+            position : relative;
+            height : auto;
+            display : block;
+        }
+
         img
         {
             width : 100%;
-            height :auto;
+            height : auto;
             display : block;
         }
 
@@ -51,6 +65,21 @@
     {
         position : relative;
         z-index : 2;
+
+        @media screen and (max-width: 767px) {
+            position : absolute;
+            top : 0;
+            left : 0;
+            right : 0;
+            width : 100%;
+        }
+    }
+
+    .news_content
+    {
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
 
@@ -62,6 +91,12 @@
         margin-top: vw(119, 1440);
         margin-right: vw(65, 1440);
 
+        @media screen and (max-width: 767px) {
+            width: 152px;
+            margin-top: vw(40, 393);
+            margin-right: 0;
+        }
+
         img
         {
             width : 100%;
@@ -71,14 +106,28 @@
 
     .news_list
     {
-        margin-top: vw(18, 1440);
+        margin-top: vw(16, 1440);
         width : 100%;
+
+        @media screen and (max-width: 767px) {
+            margin-top: vw(40, 393);
+        }
+
         .item
         {
             margin: vw(12, 1440) 0;
+
+            @media screen and (max-width: 767px) {
+                margin: vw(12, 393) 0;
+            }
+
             .date
             {
                 margin-bottom: vw(11, 1440);
+
+                @media screen and (max-width: 767px) {
+                    margin-bottom: vw(4, 393);
+                }
             
             }
         }
@@ -100,6 +149,11 @@
             width: fit-content;
             margin-left: auto;
 
+
+            @media screen and (max-width: 767px) {
+                margin-top: vw(40, 393);
+            }
+
             .d-flex
             {
                 gap: vw(12, 1440);
@@ -113,12 +167,16 @@
 #story
 {
     position : relative;
+    overflow-x : hidden;
     background-color: #0C0C08;
-    padding-bottom : vw(75, 1440);
+    padding-bottom : vw(72, 1440);
+
+    @media screen and (max-width: 767px) {
+        padding-bottom : vw(80, 393);
+    }
 
     .bg
     {
-
         height: fit-content;
         .magic
         {
@@ -144,7 +202,7 @@
             left     : 0;
             z-index : 50;
 
-            width : 100vw;
+            width : 1440px;
 
             img
             {
@@ -162,7 +220,7 @@
             transform: rotate(180deg);
             z-index : 50;
 
-            width : 100vw;
+            width : 1440px;
 
             img
             {
@@ -246,18 +304,30 @@
 
     .innerarea
     {
-        padding-left: min(340px, vw(340, 1440));
-        padding-right: min(340px, vw(340, 1440));
+        padding-left: vw(340, 1440);
+        padding-right: vw(340, 1440);
         padding-top: vw(80, 1440);
         padding-bottom: vw(88, 1440);
         position : relative;
         z-index : 2;
+
+        @media screen and (max-width: 767px) {
+            max-width: 393px;
+            padding-top: vw(80, 393);
+            padding-bottom: 0;
+            padding-left: vw(40, 393);
+            padding-right: vw(40, 393);
+        }
     }
 
     .title
     {
         width : 264px;
         height : auto;
+
+        @media screen and (max-width: 767px) {
+            width : 182px;
+        }
 
         img
         {
@@ -270,6 +340,11 @@
     {
         margin-top: vw(24, 1440);
         line-height: 5.0rem;
+
+        @media screen and (max-width: 767px) {
+            margin-top: vw(40, 393);
+            line-height: 2.0rem;
+        }
     }
 }
 
@@ -278,7 +353,11 @@
 {
     position : relative;
     overflow-x : hidden;
-    margin-top: vw(97, 1440);
+    margin-top: vw(96, 1440);
+
+    @media screen and (max-width: 767px) {
+        margin-top: vw(80, 393);
+    }
 
     .title
     {
@@ -292,6 +371,11 @@
             max-width: 409px;
             height : auto;
             margin-right: vw(12, 1440);
+
+            @media screen and (max-width: 767px) {
+                width : 278px;
+                margin-right: 0;
+            }
 
             img
             {
@@ -321,6 +405,19 @@
         margin-top: vw(80, 1440);
         gap: vw(33, 1440);
 
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            margin-top: vw(16, 393);
+            gap: vw(24, 393);
+        }
+        .sp_cards
+        {
+            @media screen and (max-width: 767px) {
+                gap: vw(16, 393);
+                margin-bottom: vw(16, 393);
+            }
+        }
+
         .card_item
         {
             flex : 0 0 auto;
@@ -328,6 +425,11 @@
             width : vw(329, 1440);
             max-width: 329px;
             height : auto;
+
+            @media screen and (max-width: 767px) {
+                width : vw(150, 393);
+                max-width: 150px;
+            }
 
             img
             {
@@ -347,6 +449,7 @@
         }
     }
 
+
 }
 
 #contact
@@ -354,12 +457,21 @@
     position : relative;
     margin-top: vw(80, 1440);
 
+    @media screen and (max-width: 767px) {
+        margin-top: vw(80, 393);
+    }
+
     .title
     {
         width : vw(242, 1440);
         max-width: 242px;
         height : auto;
         margin-bottom: vw(40, 1440);
+
+        @media screen and (max-width: 767px) {
+            width : 175px;
+            margin-bottom: vw(40, 393);
+        }
 
         img
         {
@@ -375,10 +487,18 @@
         background-color: #FFFFFF;
         padding: vw(40, 1440);
 
+        @media screen and (max-width: 767px) {
+            padding: vw(24, 393);
+        }
+
         .form_item
         {
             width : 100%;
             margin-bottom: vw(24, 1440);
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: vw(24, 393);
+            }
         }
 
         input
@@ -389,6 +509,10 @@
             border: 1px solid #D9D9D9;
             border-radius: 4px;
             padding: vw(5, 1440) vw(20, 1440);
+
+            @media screen and (max-width: 767px) {
+                padding: vw(4, 1440) vw(12, 1440);
+            }
             &::placeholder
             {
                 color: #D9D9D9;
@@ -405,6 +529,10 @@
             border: 1px solid #D9D9D9;
             border-radius: 4px;
             padding: vw(5, 1440) vw(20, 1440);
+
+            @media screen and (max-width: 767px) {
+                padding: vw(4, 1440) vw(12, 1440);
+            }
             &::placeholder
             {
                 color: #D9D9D9;
@@ -414,7 +542,12 @@
         .textarea_item
         {
             margin-bottom: vw(12, 1440);
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: vw(12, 393);
+            }
         }
+
 
         .contents
         {
@@ -427,10 +560,18 @@
             gap: vw(12, 1440);
             margin-bottom: vw(12, 1440);
 
+            @media screen and (max-width: 767px) {
+                gap: vw(8, 393);
+                margin-bottom: vw(8, 393);
+            }
+
             .red_color
             {
                padding: 0 vw(8, 1440);
                border: 1px solid #FF0000;
+               @media screen and (max-width: 767px) {
+                    padding: 0 vw(8, 393);
+               }
             }
         }
 
@@ -443,6 +584,11 @@
             padding: vw(10, 1440) vw(20, 1440);
             margin: 0 auto;
             margin-top: vw(40, 1440);
+
+            @media screen and (max-width: 767px) {
+                padding: vw(10, 393) vw(47, 393);
+                margin-top: vw(40, 393);
+            }
 
             .text
             {

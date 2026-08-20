@@ -13,20 +13,21 @@
 				<div class="pc_only firstView">
 					<img src="./imgs/firstView_pc.png">
 				</div>
-				{* <div class="sp_only">
+				<div class="sp_only">
 					<img src="./imgs/firstView_sp.png" alt="firstView">
-				</div> *}
+				</div>
 			</div>
 		</div>
 
 		<div id="news">
 			<div class="bg">
-				<img src="./imgs/news_back.png">
-				<div class="space"></div>
+				<img src="./imgs/news_back.png" class="pc_only">
+				<img src="./imgs/news_bg_sp.png" class="sp_only">
+				<div class="space pc_only"></div>
 			</div>
 
 			<div class="container-fluid innerarea">
-				<div class="d-flex">
+				<div class="d-flex news_content">
 					<div class="title">
 						<img src="./imgs/news_title.png" alt="新着一覧">
 					</div>
@@ -73,16 +74,16 @@
 				<div class="magic">
 					<img src="./imgs/story_back.png">
 				</div>
-				<div class="left_top">
+				<div class="left_top pc_only">
 					<img src="./imgs/story_side.png">
 				</div>
-				<div class="left_bottom">
+				<div class="left_bottom pc_only">
 					<img src="./imgs/story_side.png">
 				</div>
-				<div class="right_top">
+				<div class="right_top pc_only">
 					<img src="./imgs/story_side.png">
 				</div>
-				<div class="right_bottom">
+				<div class="right_bottom pc_only">
 					<img src="./imgs/story_side.png">
 				</div>
 			</div>
@@ -94,7 +95,7 @@
 				</div>
 
 				<div class="story_text fw-bold fs_24">
-					ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。ストーリー文章のサンプルです。文字の大きさ、量、字間、行間等を確認するために入れています。
+					日常の裏側には、もう一つの世界が存在する。そこには、それぞれ異なる価値観や役割を持つ個性豊かな存在たちが暮らしている。彼らは敵か味方か、それとも――。出会いを重ねるたびに隠された真実が少しずつ明らかになり、世界の見え方は変わっていく。すべてのカードは、その世界を知るための一つの物語である。
 				</div>
 			</div>
 		</div>
@@ -105,17 +106,25 @@
 					<div class="text">
 						<img src="./imgs/firstUser_title.png" alt="はじめての方へ">
 					</div>
-					<div class="decoration">
+					<div class="decoration pc_only">
 						<img src="./imgs/title_decoration.png">
 					</div>
 				</div>
 
 				<div class="content d-flex">
-					<div class="card_item green_glow">
-						<img src="./imgs/cards/kaijin/16_sutapurazuma.webp">
+					<div class="fs_32 sp_only">
+						Majicayo 怪人カードとは
+					</div>
+					<div class="d-flex sp_cards">
+						<div class="card_item green_glow">
+							<img src="./imgs/cards/kaijin/16_sutapurazuma.webp">
+						</div>
+						<div class="card_item sp_only">
+							<img src="./imgs/cards/card_back.webp">
+						</div>
 					</div>
 					<div class="textarea fw-bold">
-						<div class="fs_32">
+						<div class="fs_32 pc_only">
 							Majicayo 怪人カードとは
 						</div>
 						<div class="fs_32 yellow_color">
@@ -125,7 +134,7 @@
 							怪人をフィールドに出して戦わせ、仲間の怪人と<br>「コラボ」してパワーアップ！<br>サポートカードやトリガーカードを使えば、戦況を<br>一気にひっくり返すこともできる！<br><br>自分だけのデッキを作って、個性豊かな怪人たちと<br>一緒にバトルを楽しもう！
 						</div>
 					</div>
-					<div class="card_item">
+					<div class="card_item pc_only">
 						<img src="./imgs/cards/card_back.webp">
 					</div>
 				</div>
@@ -148,7 +157,7 @@
 					<div class="text">
 						<img src="./imgs/cardList_title.png" alt="カードリスト">
 					</div>
-					<div class="decoration">
+					<div class="decoration pc_only">
 						<img src="./imgs/title_decoration.png">
 					</div>
 				</div>
