@@ -1,5 +1,6 @@
 #howtoplay
 {
+    padding-top: vw(80, 1440);
     .fs_32
     {
         @media screen and (max-width: 767px) {
@@ -129,11 +130,11 @@
 
                 .details
                 {
-                    flex-direction: column;
                     margin-top: vw(24, 1440);
                     gap : vw(64, 1440);
 
                     @media screen and (max-width: 767px) {
+                        flex-direction: column;
                         margin-top: vw(24, 393);
                         gap: 0;
                     }

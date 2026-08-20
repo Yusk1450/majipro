@@ -336,7 +336,6 @@ a:hover
 .home_btn
 {
 	display: block;
-	margin-top: vw(40, 1440);
 	background-color: #0C0C08;
 	border: #FFFFFF 1px solid;
 
@@ -369,7 +368,7 @@ a:hover
 {
     position : relative;
     overflow-x : hidden;
-    margin-top: vw(80, 1440);
+    padding-top: vw(80, 1440);
 
 	@media screen and (max-width: 767px) {
 		margin-top: vw(80, 393);

@@ -112,7 +112,7 @@
 				</div>
 
 				<div class="content d-flex">
-					<div class="fs_32 sp_only">
+					<div class="fs_32 fw-bold sp_only">
 						Majicayo 怪人カードとは
 					</div>
 					<div class="d-flex sp_cards">
@@ -128,7 +128,7 @@
 							Majicayo 怪人カードとは
 						</div>
 						<div class="fs_32 yellow_color">
-							怪人たちを組み合わせて戦う対戦型<br>カードゲーム！	
+							怪人たちを組み合わせて戦う対戦型カードゲーム！	
 						</div>
 						<div class="fs_24">
 							怪人をフィールドに出して戦わせ、仲間の怪人と「コラボ」してパワーアップ！<br>サポートカードやトリガーカードを使えば、戦況を一気にひっくり返すこともできる！<br><br>自分だけのデッキを作って、個性豊かな怪人たちと一緒にバトルを楽しもう！
