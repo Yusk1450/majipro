@@ -1,10 +1,19 @@
 #details
 {
     padding-top: vw(80, 1440);
+    overflow-x: hidden;
+
+    @media screen and (max-width: 767px) {
+        padding-top: vw(80, 393);
+    }
 
     .card_container
     {
         justify-content : space-between;
+
+        @media screen and (max-width: 767px) {
+            display: block !important;
+        }
     }
 
     .card_item
@@ -14,6 +23,14 @@
         width : vw(400, 1440);
         max-width: 400px;
         height : auto;
+
+        @media screen and (max-width: 767px) {
+            flex : none;
+            width : vw(233, 393);
+            max-width: 233px;
+            margin: 0 auto;
+        }
+
 
         img
         {
@@ -28,13 +45,27 @@
         flex : 1 1 auto;
         width : auto;
         margin-left: vw(80, 1440);
+
+        @media screen and (max-width: 767px) {
+            flex : none;
+            width : 100%;
+            max-width: none;
+            margin-left: 0;
+            flex-direction: column;
+        }
     }
 
     .name
     {
-        width : vw(800, 1440);
+        width : auto;
         position : relative;
-        max-width: 800px;
+        background-color: #CBAB71;
+
+        @media screen and (max-width: 767px) {
+            width : 100%;
+            max-width: none;
+            margin-bottom: vw(24, 393);
+        }
 
         .bg
         {
@@ -53,28 +84,39 @@
         .name_detail
         {
             position : absolute;
-            top : 0;
+            top : 50%;
             left : 0;
             z-index : 2;
             width : 100%;
+            transform : translateY(-50%);
 
             .company_name_bg
             {
                 border: 2px solid #0c0c08;
-                margin: vw(16, 1440) 0 vw(4, 1440) vw(20, 1440);
+                margin: 0 0 vw(4, 1440) vw(20, 1440);
                 width: fit-content;
+
+                @media screen and (max-width: 767px) {
+                    margin: 0 0 vw(4, 393) vw(8, 393);
+                }
 
                 .company_name
                 {
                     padding : vw(2, 1440) vw(12, 1440);
                     background-color : #0C0C08;
                     border: 2px solid #CBAB71;
+
+                    @media screen and (max-width: 767px) {
+                        padding: vw(2, 393) vw(8, 393);
+                        font-size: 0.75rem !important;
+                    }
                 }
             }
 
             .kaijin_name
             {
                 margin-left: vw(24, 1440);
+                white-space : nowrap;
             }
         }
     }
@@ -87,12 +129,27 @@
         padding-left: vw(24, 1440);
         padding-right: vw(40, 1440);
 
+        @media screen and (max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+        }
+
+        
+
         .item
         {
             padding-top: vw(32, 1440);
             width: 100%;
             height: fit-content;
             justify-content: flex-start;
+
+            @media screen and (max-width: 767px) {
+                padding-top: vw(24, 393);
+                flex-direction: column;
+                align-items: start !important;
+                gap: vw(8, 393);
+            }
 
             .subject
             {
@@ -101,12 +158,20 @@
                 height: auto;
                 position: relative;
 
+                @media screen and (max-width: 767px) {
+                    width: vw(120, 393);
+                }
+
                 .subject_title
                 {
                     position: absolute;
                     top: 2px;
                     left: 24px;
                     z-index: 2;
+                    @media screen and (max-width: 767px) {
+                        left: 12px;
+                        top: 1px;
+                    }
                 }
                 img
                 {
@@ -120,6 +185,12 @@
                 flex : 1 1 auto;
                 min-width : 0;
                 margin-left: vw(32, 1440);
+
+                @media screen and (max-width: 767px) {
+                    margin-left: 0;
+                    width: 100%;
+                    margin-top: vw(8, 393);
+                }
             }
 
             .detail_border
@@ -128,6 +199,10 @@
                 box-sizing : border-box;
                 padding: vw(12, 1440);
                 border: 1px solid #656565;
+
+                @media screen and (max-width: 767px) {
+                    padding: vw(12, 393);
+                }
             }
 
         }
@@ -139,17 +214,25 @@
 
     .link
     {
-        width: 100%;
-        height: auto;
+        width : fit-content;
+        height : vw(80, 1440);
+        max-height: 80px;
         position: relative;
         margin-top: vw(96, 1440);
         margin-bottom: vw(8, 1440);
 
+        @media screen and (max-width: 767px) {
+            height: vw(80, 393);
+            max-height: 80px;
+            margin-top: vw(40, 393);
+            margin-bottom: vw(8, 393);
+        }
+
         img
         {
-            width: 100%;
-            height: auto;
-            display: block;
+            width : auto;
+            height : 100%;
+            display : block;
         }
 
         a
@@ -161,9 +244,17 @@
             z-index: 2;
             padding: vw(15, 1440) vw(20, 1440);
 
+            @media screen and (max-width: 767px) {
+                padding: vw(15, 393) vw(20, 393);
+            }
+
             i
             {
-                font-size: min(vw(40, 1440), 40px);
+                font-size: vw(40, 1440);
+
+                @media screen and (max-width: 767px) {
+                    font-size: vw(40, 393);
+                }
             }
         }
     }
@@ -177,9 +268,14 @@
         flex-direction: column;
         align-items: center;
 
+        @media screen and (max-width: 767px) {
+            gap: vw(24, 393);
+            margin-top: vw(40, 393);
+        }
+
         .home
         {
-            gap: vw(28, 1440);
+            gap: 28px;
         }
     }
 }

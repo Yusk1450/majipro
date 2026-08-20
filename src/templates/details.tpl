@@ -10,6 +10,23 @@
 
         <div id="details">
             <div class="container-fluid innerarea">
+				<div class="name sp_only">						
+					<div class="bg">
+						<img src="./imgs/details_name.png" alt="{$card.name}">
+					</div>
+					<div class="name_detail">
+						{if $card.company != ""}
+						<div class="company_name_bg">
+							<div class="company_name fw-bold fs_20 gold_color">
+								{$card.company}
+							</div>
+						</div>
+						{/if}
+						<div class="kaijin_name fw-bold fs_32 black_color">
+							{$card.name}
+						</div>
+					</div>
+				</div>
                 <div class="d-flex card_container">
                     <div class="card_item
 						{if $card.attribute == "火"}red_glow
@@ -21,7 +38,7 @@
                         <img src="./{$card.image}" alt="{$card.name}">
                     </div>
 					<div class="info">
-						<div class="name">						
+						<div class="name pc_only">						
 							<div class="bg">
 								<img src="./imgs/details_name.png" alt="{$card.name}">
 							</div>
@@ -120,7 +137,7 @@
                 </div>
             </div>
 			{if $card.website != ""}
-				<div class="d-flex">
+				<div class="d-flex justify-content-center">
 					<div class="link">
 						<img src="./imgs/link_decoration.png">
 						<a href="{$card.website}" target="_blank">
