@@ -1,5 +1,12 @@
 #howtoplay
 {
+    .fs_32
+    {
+        @media screen and (max-width: 767px) {
+            font-size: 1.25rem !important;
+        }
+    }
+
     .title
     {
         display : block;
@@ -7,6 +14,11 @@
         max-width: 264px;
         height : auto;
         margin : vw(40, 1440) 0;
+
+        @media screen and (max-width: 767px) {
+            width : 180px;
+            margin : vw(40, 393) 0;
+        }
 
         img
         {
@@ -21,6 +33,10 @@
         height : auto;
         margin-bottom : vw(80, 1440);
 
+        @media screen and (max-width: 767px) {
+            margin-bottom: vw(80, 393);
+        }
+
     }
 
     .card_genre
@@ -31,6 +47,11 @@
         background-color : #FFFFFF;
         padding : vw(24, 1440) vw(24, 1440) vw(80, 1440) vw(24, 1440);
         position : relative;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: vw(80, 393);
+            padding: vw(12, 393) vw(12, 393) vw(80, 393) vw(12, 393);
+        }
 
         .magical_bg
         {
@@ -62,17 +83,28 @@
         {
             margin-top : 0;
             margin-bottom : vw(24, 1440);
+            @media screen and (max-width: 767px) {
+                margin-bottom: vw(12, 393);
+            }
         }
 
         .kaijin_cards
         {
             margin-top : vw(40, 1440);
 
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+                margin-top: vw(24, 393);
+            }
+
             .card_text
             {
                 flex : 1 1 auto;
                 width : 100%;
                 margin-right: 8px;
+                @media screen and (max-width: 767px) {
+                    margin-right: 0;
+                }
 
                 .title
                 {
@@ -80,6 +112,13 @@
                     max-width : 225px;
                     height : auto;
                     margin-top: vw(24, 1440);
+
+                    @media screen and (max-width: 767px) {
+                        width : vw(144, 393);
+                        max-width : 144px;
+                        margin-top: 0;
+                        margin-bottom: vw(24, 393);
+                    }
 
                     img
                     {
@@ -90,8 +129,15 @@
 
                 .details
                 {
+                    flex-direction: column;
                     margin-top: vw(24, 1440);
                     gap : vw(64, 1440);
+
+                    @media screen and (max-width: 767px) {
+                        margin-top: vw(24, 393);
+                        gap: 0;
+                    }
+
                     .detail_container
                     {
                         flex : 1 1 auto;
@@ -101,6 +147,10 @@
                             flex : 1 1 auto;
                             width : 100%;
                             margin-bottom: vw(24, 1440);
+
+                            @media screen and (max-width: 767px) {
+                                margin-bottom: vw(24, 393);
+                            }
 
                             .number
                             {
@@ -114,6 +164,13 @@
                                 margin-bottom: vw(12, 1440);
     
                                 background-color: #C67E7F;
+
+                                @media screen and (max-width: 767px) {
+                                    width: 22px;
+                                    height: 22px;
+                                    margin-right: vw(8, 393);
+                                    margin-bottom: vw(12, 393);
+                                }
                             }
     
                         }
@@ -128,6 +185,13 @@
                 height : auto;
                 flex : 0 0 vw(408, 1440);
 
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    flex: none;
+                    margin-bottom: vw(24, 393);
+                    margin-top: vw(24, 393);
+                }
+
                 img
                 {
                     width : 100%;
@@ -140,6 +204,10 @@
         .support_trigger_cards_container
         {
             gap : vw(24, 1440);
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+                gap: 0;
+            }
         }
 
         .support_trigger_cards
@@ -148,6 +216,9 @@
             width : 100%;
             margin-right: 8px;
             gap : vw(6, 1440);
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+            }
 
             .card_text
             {
@@ -160,6 +231,12 @@
                     max-width : 266px;
                     height : auto;
                     margin-top: 0;
+
+                    @media screen and (max-width: 767px) {
+                        width: 176px;
+                        margin-bottom: vw(24, 393);
+                        margin-top: vw(16, 393);
+                    }
                 }
 
                 .detail_item
@@ -167,6 +244,7 @@
                     flex : 1 1 auto;
                     width : 100%;
                     margin-top: vw(24, 1440);
+
 
                     .number
                     {
@@ -179,6 +257,13 @@
                         margin-right: vw(8, 1440);
 
                         background-color: #C67E7F;
+
+                        @media screen and (max-width: 767px) {
+                            width: 22px;
+                            height: 22px;
+                            margin-right: vw(8, 393);
+                            margin-bottom: vw(24, 393);
+                        }
                     }
 
                 }
@@ -190,6 +275,14 @@
                 max-width : 330px;
                 height : auto;
                 flex : 0 0 vw(330, 1440);
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    flex: none;
+                    margin-bottom: vw(24, 393);
+                    margin-top: vw(24, 393);
+                }
+
                 img
                 {
                     width : 100%;
@@ -205,6 +298,12 @@
         width : 342px;   
         margin-bottom : vw(40, 1440);       
         margin : vw(40, 1440) 0;
+
+        @media screen and (max-width: 767px) {
+            width : 250px;
+            margin-bottom: vw(40, 393);
+
+        }
 
         .subject_bg
         {
@@ -230,6 +329,11 @@
     .battle_state
     {
         margin-bottom : vw(80, 1440);
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: vw(40, 393);
+        }
+
         .battle_state_title
         {
             position : relative;
@@ -239,6 +343,11 @@
                 max-width : 818px;
                 height : auto;
                 margin: 0 auto;
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    padding-left: vw(40, 393);
+                    padding-right: vw(40, 393);
+                }
                 img
                 {
                     width : 100%;
@@ -261,6 +370,10 @@
             height : auto;
             margin-top : vw(32, 1440);
             margin-bottom : vw(80, 1440);
+            @media screen and (max-width: 767px) {
+                margin-top: vw(24, 393);
+                margin-bottom: vw(80, 393);
+            }
 
             img
             {
@@ -279,6 +392,10 @@
             height : auto;
             margin-top : vw(24, 1440);
             margin-bottom : vw(80, 1440);
+            @media screen and (max-width: 767px) {
+                margin-top: vw(24, 393);
+                margin-bottom: vw(40, 393);
+            }
 
             img
             {
@@ -286,6 +403,22 @@
                 height : auto;
             }
         }
+
+        .turn_flow_img
+        {
+            width : 100%;
+            height : auto;
+            @media screen and (max-width: 767px) {
+                width: 130px;
+
+                img
+                {
+                    width : 100%;
+                    height : auto;
+                }
+            }
+        }
+
         .flow_container
         {
             width : 100%;
@@ -293,11 +426,28 @@
             margin-top : vw(80, 1440);
             margin-bottom : vw(40, 1440);
 
+            @media screen and (max-width: 767px) {
+                margin-top: vw(40, 393);
+                margin-bottom: vw(40, 393);
+            }
+
+            .flow_flex
+            {
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                }
+            }
+
             .flow_item
             {
                 width : 100%;
                 height : auto;
                 margin-bottom : vw(40, 1440);
+
+                @media screen and (max-width: 767px) {
+                    margin-bottom: vw(40, 393);
+                }
+
 
                 .detail_container
                 {
@@ -307,6 +457,12 @@
                     margin-right : vw(80, 1440);
                     margin-left : vw(24, 1440);
 
+                    @media screen and (max-width: 767px) {
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+
+                    
                     .item
                     {
                         width : 100%;
@@ -320,12 +476,20 @@
                             margin-bottom : vw(40, 1440);
                             position : relative;
 
+                            @media screen and (max-width: 767px) {
+                                margin-bottom: vw(24, 393);
+                            }
+
                         }
 
                         .bg
                         {
                             width : 587px;
                             height : auto;
+
+                            @media screen and (max-width: 767px) {
+                                width: 100%;
+                            }
 
                             img
                             {
@@ -350,6 +514,12 @@
                     max-width : 338px;
                     height : auto;
                     flex : 0 0 vw(338, 1440);
+
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                        flex: none;
+                        margin-top: vw(24, 393);
+                    }
 
                     img
                     {

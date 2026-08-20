@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="youtube">
-                        <iframe src="https://www.youtube.com/embed/-2nDRJSW7DY?si=VAx7DtgeoutA6ReD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JZgf1bAZ2KM?si=Mj_RrAp053VpF4k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="card_genre">
@@ -55,6 +55,7 @@
                     </div>
 
                     <div class="d-flex kaijin_cards">
+
                         <div class="card_text">
                             <div class="title">
                                 <img src="./imgs/kaijin_title.png" alt="怪人カード">
@@ -62,6 +63,9 @@
 
                             <div class="black_color fs_24 fw-bold">
                                 怪人カードにはバトルで必要な多様なデータが記載されている。 <br>「戦闘力」「コスト」「能力」の３要素を把握して戦いに備えよう！
+                            </div>
+                            <div class="card_detail sp_only">
+                                <img src="./imgs/kaijin_detail.png" alt="怪人カード">
                             </div>
                             <div class="d-flex details">
                                 <div class="detail_container">
@@ -146,7 +150,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card_detail">
+                        <div class="card_detail pc_only">
                             <img src="./imgs/kaijin_detail.png" alt="怪人カード">
                         </div>
                     </div>
@@ -160,6 +164,9 @@
                                 <div class="detail_container">
                                     <div class="black_color fs_24 fw-bold">
                                         自分のターン中であれば、回数制限なくいつでも自由に使用できる。
+                                    </div>
+                                    <div class="card_detail sp_only">
+                                        <img src="./imgs/support_detail.png" alt="サポートカード">
                                     </div>
                                     <div class="detail_item">
                                         <div class="d-flex">
@@ -194,7 +201,7 @@
                                 </div>
 
                             </div>
-                            <div class="card_detail">
+                            <div class="card_detail pc_only">
                                 <img src="./imgs/support_detail.png" alt="サポートカード">
                             </div>
                         </div>
@@ -207,6 +214,9 @@
                                     <div class="detail_container">
                                         <div class="black_color fs_24 fw-bold">
                                         フィールドに最大4枚まで伏せられ、条件を満たすと相手ターンでも使える。
+                                        </div>
+                                        <div class="card_detail sp_only">
+                                            <img src="./imgs/trigger_detail.png" alt="トリガーカード">
                                         </div>
                                         <div class="detail_item">
                                             <div class="d-flex">
@@ -240,7 +250,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card_detail">
+                                <div class="card_detail pc_only">
                                     <img src="./imgs/trigger_detail.png" alt="トリガーカード">
                                 </div>
                             </div>
@@ -261,7 +271,12 @@
                 </div>
 
                 <div class="decks">
-                    <img src="./imgs/decks.png">
+                    <div class="pc_only">
+                        <img src="./imgs/decks.png">
+                    </div>
+                    <div class="sp_only">
+                        <img src="./imgs/decks_sp.png">
+                    </div>
                 </div>
 
                 <div class="battle_state_title">
@@ -287,11 +302,14 @@
                         自分のターンには、怪人の召喚や攻撃、ターン終わりの手札調整までを以下の手順で行います。
                     </div>
                     <div class="turn_flow">
-                        <img src="./imgs/turn_pc.png">
-                    <div>
+                        <div class="turn_flow_img">
+                            <img src="./imgs/turn_pc.png" class="pc_only">
+                            <img src="./imgs/turn_sp.png" class="sp_only">
+                        </div>
+                    </div>
                     <div class="flow_container">
                         <div class="flow_item">
-                            <div class="d-flex">
+                            <div class="d-flex flow_flex">
                                 <div class="detail_container">
                                     <div class="item">
                                         <div class="subject">
@@ -314,7 +332,7 @@
                         </div>
 
                         <div class="flow_item">
-                            <div class="d-flex">
+                            <div class="d-flex flow_flex">
                                 <div class="detail_container">
                                     <div class="item">
                                         <div class="subject">
@@ -336,7 +354,7 @@
                             </div>
                         </div>
                         <div class="flow_item">
-                            <div class="d-flex">
+                            <div class="d-flex flow_flex">
                                 <div class="detail_container">
                                     <div class="item">
                                         <div class="subject">
@@ -359,7 +377,7 @@
                         </div>
 
                         <div class="flow_item">
-                            <div class="d-flex">
+                            <div class="d-flex flow_flex">
                                 <div class="detail_container">
                                     <div class="item">
                                         <div class="subject">
@@ -382,7 +400,7 @@
                         </div>
 
                         <div class="flow_item">
-                            <div class="d-flex">
+                            <div class="d-flex flow_flex">
                                 <div class="detail_container">
                                     <div class="item">
                                         <div class="subject">
@@ -405,11 +423,13 @@
                         </div>
                     </div>
                 </div>
-                </div class="catchphrase">
-                    <img src="./imgs/catchphrase.png" alt="あそびかたをマスターして、怪人バトルを楽しもう！！！">
+                <div class="catchphrase">
+                    <img src="./imgs/catchphrase.png" alt="あそびかたをマスターして、怪人バトルを楽しもう！！！" class="pc_only">
+                    <img src="./imgs/catchphrase_sp.png" alt="あそびかたをマスターして、怪人バトルを楽しもう！！！" class="sp_only">
                 <div>
             </div>
         </div>
+    </div>
 
 		{include file='footer.tpl'}
 	</body>
