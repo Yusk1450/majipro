@@ -3,6 +3,10 @@
     .title
     {
         margin-top: vw(40, 1440);
+
+		@media screen and (max-width: 767px) {
+			margin-top: vw(40, 393);
+		}
     }
 
     .content_title
@@ -11,6 +15,12 @@
         height : vw(48, 1440);
         max-height: 48px;
         width : auto;
+
+		@media screen and (max-width: 767px) {
+			margin-top: vw(40, 393);
+			height: vw(31, 393);
+			max-height: 31px;
+		}
     }
 
     img
@@ -23,11 +33,17 @@
     {
         margin-top: vw(32, 1440) !important;
         margin-bottom: vw(80, 1440) !important;
+
+        @media screen and (max-width: 767px) {
+			margin-top: vw(24, 393) !important;
+			margin-bottom: vw(40, 393) !important;
+		}
     }
 
-    .trigger
+    .content:last-of-type
     {
-        margin-bottom: vw(0, 1440) !important;
+        margin-bottom: 0 !important;
+
     }
 
 }

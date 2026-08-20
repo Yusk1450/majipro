@@ -2,4 +2,11 @@
 {
     margin-top: vw(80, 1440);
     padding-bottom: vw(80, 1440);
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        text-align: start;
+        margin-top: vw(40, 393);
+        padding-bottom: vw(80, 393);
+    }
 }

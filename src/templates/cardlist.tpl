@@ -31,7 +31,7 @@
 				
 				<div class="content">
 					{foreach $kaijin_cards as $card}
-						<a href="details.php?id={$card.id}" class="card_item kaijin
+						<a href="card.php?id={$card.id}" class="card_item kaijin
 							{if $card.attribute == "火"}red_glow
 							{elseif $card.attribute == "水"}blue_glow
 							{elseif $card.attribute == "風"}green_glow

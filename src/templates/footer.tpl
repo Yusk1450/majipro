@@ -1,5 +1,5 @@
 	<div class="footer">
-		<div class="text-center">
+		<div class="innerarea fs_16">
 			©2026 Majicayo Project × Nagoya Bunri University App Development Project
 		</div>
 	</div>

@@ -48,6 +48,15 @@
 	}
 }
 
+.fs_16
+{
+	font-size : 1rem !important;
+
+	@media screen and (max-width: 767px) {
+		font-size : 0.625rem !important;
+	}
+}
+
 .fs_12
 {
 	font-size : 0.75rem !important;
@@ -133,12 +142,13 @@ a:hover
 	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: min(80px, vw(80, 1440));
-	padding-right: min(80px, vw(80, 1440));
+	padding-left: vw(80, 1440);
+	padding-right: vw(80, 1440);
 
 	@media screen and (max-width: 767px) {
-		padding-left: vw(80, 360);
-		padding-right: vw(80, 360);
+		max-width: 393px;
+		padding-left: vw(40, 393);
+		padding-right: vw(40, 393);
 	}
 }
 
@@ -211,6 +221,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #72B16B;
 	-moz-box-shadow: 0px 0px 20px 0px #72B16B;
 	box-shadow: 0px 0px 16px 0px #72B16B;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #72B16B;
+		-moz-box-shadow: 0px 0px 0px 0px #72B16B;
+		box-shadow: 0px 0px 0px 0px #72B16B;
+	}
 }
 
 .brown_glow
@@ -218,6 +234,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #A88B44;
 	-moz-box-shadow: 0px 0px 16px 0px #A88B44;
 	box-shadow: 0px 0px 16px 0px #A88B44;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #A88B44;
+		-moz-box-shadow: 0px 0px 0px 0px #A88B44;
+		box-shadow: 0px 0px 0px 0px #A88B44;
+	}
 }
 
 .red_glow
@@ -225,6 +247,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #C67E7F;
 	-moz-box-shadow: 0px 0px 16px 0px #C67E7F;
 	box-shadow: 0px 0px 16px 0px #C67E7F;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #C67E7F;
+		-moz-box-shadow: 0px 0px 0px 0px #C67E7F;
+		box-shadow: 0px 0px 0px 0px #C67E7F;
+	}
 }
 
 .blue_glow
@@ -232,6 +260,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #7FBEE9;
 	-moz-box-shadow: 0px 0px 16px 0px #7FBEE9;
 	box-shadow: 0px 0px 16px 0px #7FBEE9;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #7FBEE9;
+		-moz-box-shadow: 0px 0px 0px 0px #7FBEE9;
+		box-shadow: 0px 0px 0px 0px #7FBEE9;
+	}
 }
 
 .gray_glow
@@ -239,6 +273,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #8E8E8D;
 	-moz-box-shadow: 0px 0px 16px 0px #8E8E8D;
 	box-shadow: 0px 0px 16px 0px #8E8E8D;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #8E8E8D;
+		-moz-box-shadow: 0px 0px 0px 0px #8E8E8D;
+		box-shadow: 0px 0px 0px 0px #8E8E8D;
+	}
 }
 
 .gold_glow
@@ -246,6 +286,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #C7A95D;
 	-moz-box-shadow: 0px 0px 16px 0px #C7A95D;
 	box-shadow: 0px 0px 16px 0px #C7A95D;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #C7A95D;
+		-moz-box-shadow: 0px 0px 0px 0px #C7A95D;
+		box-shadow: 0px 0px 0px 0px #C7A95D;
+	}
 }
 
 .black_glow
@@ -253,6 +299,12 @@ a:hover
 	-webkit-box-shadow:0px 0px 16px 0px #696969;
 	-moz-box-shadow: 0px 0px 16px 0px #696969;
 	box-shadow: 0px 0px 16px 0px #696969;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-shadow:0px 0px 0px 0px #696969;
+		-moz-box-shadow: 0px 0px 0px 0px #696969;
+		box-shadow: 0px 0px 0px 0px #696969;
+	}
 }
 
 .more_btn
@@ -310,6 +362,10 @@ a:hover
     overflow-x : hidden;
     margin-top: vw(80, 1440);
 
+	@media screen and (max-width: 767px) {
+		margin-top: vw(80, 393);
+	}
+
     .title
     {
         width : fit-content;
@@ -322,6 +378,12 @@ a:hover
             max-width: 304px;
             height : auto;
             margin-right: vw(12, 1440);
+
+			@media screen and (max-width: 767px) {
+				width: vw(212, 393);
+				max-width: 212px;
+				margin-right: 0;
+			}
 
 
             img
@@ -354,6 +416,11 @@ a:hover
         display: grid;
         grid-template-columns: repeat(5, 1fr);
 
+		@media screen and (max-width: 767px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: vw(12, 393);
+		}
+
         .card_item
         {
             position : relative;
@@ -374,6 +441,11 @@ a:hover
 				z-index : 200;
 				animation : popup .17s forwards;
 				filter : drop-shadow(0 24px 16px #0C0C08);
+
+				@media screen and (max-width: 767px) {
+					animation: none;
+					filter : none;
+				}
 			}
         }
     }
