@@ -46,7 +46,7 @@
 							<div class="date fw-regular">2026/01/01</div>
 							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
 						</div>
-						<a href="#" class="more_btn">
+						<a href="#" class="more_btn d-flex">
 							<div class="d-flex">
 								<div class="gold_color fw-bold">
 									ニュースへ
