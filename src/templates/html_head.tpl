@@ -34,3 +34,13 @@
 <meta property="twitter:description" content="{$caption}" />
 <meta property="twitter:image" content="https://majipro.xyz/{$ogp}" />
 {/if}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3BM6CXTZM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L3BM6CXTZM');
+</script>
