@@ -33,16 +33,16 @@
 					</div>
 					<div class="news_list black_color fs_20">
 						<div class="item">
-							<div class="date fw-regular">2026/08/22</div>
-							<div class="fw-bold">稲沢夏まつり2026にてカード配布</div>
+							<div class="date fw-regular">2026/08/20</div>
+							<div class="fw-bold">Webサイトを公開しました！</div>
 						</div>
-						<div class="border_line"></div>
-						<div class="item">
+						<div class="border_line d-none"></div>
+						<div class="item d-none">
 							<div class="date fw-regular">2026/01/01</div>
 							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
 						</div>
-						<div class="border_line"></div>
-						<div class="item">
+						<div class="border_line d-none"></div>
+						<div class="item d-none">
 							<div class="date fw-regular">2026/01/01</div>
 							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
 						</div>
@@ -95,7 +95,7 @@
 				</div>
 
 				<div class="story_text fw-bold fs_24">
-					日常の裏側には、もう一つの世界が存在する。そこには、それぞれ異なる価値観や役割を持つ個性豊かな存在たちが暮らしている。彼らは敵か味方か、それとも――。出会いを重ねるたびに隠された真実が少しずつ明らかになり、世界の見え方は変わっていく。すべてのカードは、その世界を知るための一つの物語である。
+					日常の裏側には、もう一つの世界が存在する。<br>そこには、それぞれ異なる価値観や役割を持つ個性豊かな存在たちが暮らしている。<br>彼らは敵か味方か、それとも――<br>出会いを重ねるたびに隠された真実が少しずつ明らかになり、世界の見え方は変わっていく。<br>すべてのカードは、その世界を知るための一つの物語である。
 				</div>
 			</div>
 		</div>
@@ -131,7 +131,7 @@
 							怪人たちを組み合わせて戦う対戦型<br>カードゲーム！	
 						</div>
 						<div class="fs_24">
-							怪人をフィールドに出して戦わせ、仲間の怪人と<br>「コラボ」してパワーアップ！<br>サポートカードやトリガーカードを使えば、戦況を<br>一気にひっくり返すこともできる！<br><br>自分だけのデッキを作って、個性豊かな怪人たちと<br>一緒にバトルを楽しもう！
+							怪人をフィールドに出して戦わせ、仲間の怪人と「コラボ」してパワーアップ！<br>サポートカードやトリガーカードを使えば、戦況を一気にひっくり返すこともできる！<br><br>自分だけのデッキを作って、個性豊かな怪人たちと一緒にバトルを楽しもう！
 						</div>
 					</div>
 					<div class="card_item pc_only">
@@ -204,7 +204,7 @@
 							</div>
 						</div>
 						<div class="input">
-							<input type="text" id="name" name="name" placeholder="稲沢太郎">
+							<input type="text" id="name" name="name" placeholder="稲沢太郎" class="form-control form-control-lg">
 						</div>
 					</div>
 
@@ -215,7 +215,7 @@
 							</div>
 						</div>
 						<div class="input">
-							<input type="text" id="company" name="company" placeholder="〇〇株式会社">
+							<input type="text" id="company" name="company" placeholder="〇〇株式会社" class="form-control form-control-lg">
 						</div>
 					</div>
 
@@ -229,7 +229,7 @@
 							</div>
 						</div>
 						<div class="input">
-							<input type="text" id="mail" name="mail" placeholder="name@example.com">
+							<input type="text" id="mail" name="mail" placeholder="name@example.com" class="form-control form-control-lg">
 						</div>
 					</div>
 
@@ -243,7 +243,7 @@
 							</div>
 						</div>
 						<div class="input">
-							<select id="genre" name="genre" required>
+							<select id="genre" name="genre" required class="form-select form-select-lg">
 								<option value="" selected disabled>こちらからお選びください</option>
 								<option value="1">怪人カードの配布について</option>
 								<option value="2">怪人カードのルールについて</option>
@@ -254,7 +254,7 @@
 					</div>
 
 					<div class="form_item">
-						<textarea id="contents" name="contents" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+						<textarea id="contents" name="contents" placeholder="お問い合わせ内容をご記入ください。" class="form-control form-control-lg"></textarea>
 					</div>
 					<div class="submit_btn">
 						送信する
