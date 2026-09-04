@@ -1,3 +1,11 @@
+/*
+Theme Name:【公式】Majicayo Project「怪人カード」
+Theme URI: https://majipro.xyz/
+Author: ICHINOSE Yurino
+AuthorURI: https://majipro.xyz/
+Description: Majicayo Project「怪人カード」の公式サイトです
+Version: 1.0
+*/
 
 @function vw($px, $baseWidth)
 {
@@ -154,7 +162,7 @@ a:hover
 
 .bg
 {
-	background-image    : url(../imgs/bg.png);
+	background-image    : url(imgs/bg.png);
 	background-size     : 1440px auto;
 	background-position : top center;
 	background-repeat   : repeat-y;
@@ -169,13 +177,13 @@ a:hover
 	height              : 100vh;
 	z-index             : 9999;
 	pointer-events      : none;
-	background-image    : url(../imgs/bg_line.png);
+	background-image    : url(imgs/bg_line.png);
 	background-size     : 100% auto;
 	background-position : top center;
 	background-repeat   : repeat-y;
 
 	@media screen and (max-width: 767px) {
-		background-image    : url(../imgs/bg_line_sp.png);
+		background-image    : url(imgs/bg_line_sp.png);
 	}
 
 }

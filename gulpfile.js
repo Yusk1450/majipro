@@ -10,16 +10,28 @@ function sassTask()
 			.pipe(sass())
 			.pipe(sourcemaps.write())
 			.pipe(cssmin())
-			.pipe(gulp.dest('./src/css'));
+			.pipe(gulp.dest('./src/'));
+}
+
+function move()
+{
+    return gulp.src('./src/**/*')
+        .pipe(gulp.dest('../majipro-wp/wp-content/themes/majipro'));
 }
 
 function watchTask()
 {
 	gulp.watch([
 		'./scss/**',
-	], gulp.series(sassTask));
+		'./src/*.php',
+		'./src/php/*.php',
+		'./src/*.js',
+		'./src/js/*.js',
+		'./src/dao/**'
+	], gulp.series(sassTask, move));
 }
 
 exports.sass = sassTask;
+exports.move = move;
 exports.watch = watchTask;
 exports.default = gulp.series(sassTask);
