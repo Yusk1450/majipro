@@ -24,6 +24,19 @@
     <meta name="author" content="nose">
     <meta name="language" content="ja">
 
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://majipro.xyz/" />
+    <meta property="og:title" content="{$title}" />
+    <meta property="og:description" content="{$caption}" />
+    <meta property="og:image" content="<?php bloginfo('template_directory') ?>/imgs/ogp.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://majipro.xyz/" />
+    <meta property="twitter:title" content="{$title}" />
+    <meta property="twitter:description" content="{$caption}" />
+    <meta property="twitter:image" content="<?php bloginfo('template_directory') ?>/imgs/ogp.png" />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3BM6CXTZM"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
