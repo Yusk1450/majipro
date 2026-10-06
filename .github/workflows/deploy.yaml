@@ -19,7 +19,7 @@ jobs:
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_USER: ${{ secrets.SSH_USER || secrets.SSH_USERNAME }}
       SSH_PORT: ${{ secrets.SSH_PORT || '22' }}
-      DEST: /home/yusk1450/www/majipro/
+      DEST: /home/yusk1450/www/majipro/wp-content/themes/majipro/
 
     steps:
     - uses: actions/checkout@v5
