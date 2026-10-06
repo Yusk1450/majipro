@@ -18,7 +18,7 @@
 
     <!-- Meta -->
     <meta name="title" content="【公式】Majicayo Project「怪人カード」" />
-    <meta name="description" content="Majicayo Project「怪人カード」の公式サイトになります" />
+    <meta name="description" content="中小企業×トレーディングカードゲーム「Majicayo Project 怪人カード」公式サイト。中小企業が個性豊かな「怪人」としてカードに！" />
     <meta name="keywords" content="愛知,稲沢,カードバトル,名古屋文理大学,NBU,アプリ開発プロジェクト,アプリ開発,majicayo,まじかよ,majipro,怪人カード">
     <meta name="robot" content="index,follow,noarchive">
     <meta name="author" content="nose">
@@ -26,15 +26,15 @@
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://majipro.xyz/" />
-    <meta property="og:title" content="{$title}" />
-    <meta property="og:description" content="{$caption}" />
+    <meta property="og:title" content="【公式】Majicayo Project「怪人カード」" />
+    <meta property="og:description" content="中小企業×トレーディングカードゲーム「Majicayo Project 怪人カード」公式サイト。中小企業が個性豊かな「怪人」としてカードに！" />
     <meta property="og:image" content="<?php bloginfo('template_directory') ?>/imgs/ogp.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://majipro.xyz/" />
-    <meta property="twitter:title" content="{$title}" />
-    <meta property="twitter:description" content="{$caption}" />
+    <meta property="twitter:title" content="【公式】Majicayo Project「怪人カード」" />
+    <meta property="twitter:description" content="中小企業×トレーディングカードゲーム「Majicayo Project 怪人カード」公式サイト。中小企業が個性豊かな「怪人」としてカードに！" />
     <meta property="twitter:image" content="<?php bloginfo('template_directory') ?>/imgs/ogp.png" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3BM6CXTZM"></script>
