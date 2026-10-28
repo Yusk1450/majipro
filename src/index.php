@@ -10,47 +10,44 @@
 				</div>
 			</div>
 		</div>
-
 		<div id="news">
-			<div class="bg">
-				<img src="<?php bloginfo('template_directory') ?>/imgs/news_back.png" class="pc_only">
-				<img src="<?php bloginfo('template_directory') ?>/imgs/news_bg_sp.png" class="sp_only">
-				<div class="space pc_only"></div>
-			</div>
-
 			<div class="container-fluid innerarea">
-				<div class="d-flex news_content">
-					<div class="title">
-						<img src="<?php bloginfo('template_directory') ?>/imgs/news_title.png" alt="新着一覧">
-					</div>
-					<div class="news_list black_color fs_20">
-						<div class="item">
-							<div class="date fw-regular">2026/08/20</div>
-							<div class="fw-bold">Webサイトを公開しました！</div>
-						</div>
-						<div class="border_line d-none"></div>
-						<div class="item d-none">
-							<div class="date fw-regular">2026/01/01</div>
-							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
-						</div>
-						<div class="border_line d-none"></div>
-						<div class="item d-none">
-							<div class="date fw-regular">2026/01/01</div>
-							<div class="fw-bold">テストテストテストテストテストテストテストテストテストテスト</div>
-						</div>
-						<a href="#" class="more_btn d-none">
-							<div class="d-flex">
-								<div class="gold_color fw-bold">
-									ニュースへ
-								</div>
-								<div class="gold_color">
-									<i class="fas fa-chevron-right"></i>
-								</div>
-							</div>
-						</a>
-					</div>
-
+				<div class="title">
+					<img src="<?php bloginfo('template_directory') ?>/imgs/news_title.png" alt="新着一覧">
 				</div>
+				<div class="news_list black_color fs_20">
+					<?php
+						$query = new WP_Query(array(
+							'post_type' => 'post',
+							'post_status' => 'publish',
+							'posts_per_page' => 3,
+							'orderby' => 'date',
+							'order' => 'DESC',
+						));
+						if ($query->have_posts()):
+							while ($query->have_posts()):
+								$query->the_post();
+					?>
+						<div class="item">
+							<div class="date fw-regular"><?php the_time('Y/m/d'); ?></div>
+							<a href="<?php the_permalink(); ?>" class="fw-bold"><?php the_title(); ?></a>
+						</div>
+					<?php
+							endwhile;
+						endif;
+					?>
+				</div>
+
+				<a href="#" class="more_btn d-none">
+					<div class="d-flex">
+						<div class="gold_color fw-bold">
+							ニュースへ
+						</div>
+						<div class="gold_color">
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</div>
+				</a>
 			</div>
 		</div>
 
@@ -58,10 +55,8 @@
 		<div id="story">
 			<div class="bg">
 				<div class="top">
-					<img src="<?php bloginfo('template_directory') ?>/imgs/bg_line_top.png">
 				</div>
 				<div class="bottom">
-					<img src="<?php bloginfo('template_directory') ?>/imgs/bg_line_top.png">
 				</div>
 				<div class="magic">
 					<img src="<?php bloginfo('template_directory') ?>/imgs/story_back.png">

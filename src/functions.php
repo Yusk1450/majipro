@@ -151,5 +151,4 @@
 
 		register_post_type( 'trigger', $args );
 	}
-
 	

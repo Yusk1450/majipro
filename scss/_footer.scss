@@ -3,6 +3,8 @@
     margin-top: vw(80, 1440);
     padding-bottom: vw(80, 1440);
     text-align: center;
+    position: relative;
+    z-index: 2;
 
     @media screen and (max-width: 767px) {
         text-align: start;
