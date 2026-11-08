@@ -1,3 +1,8 @@
+<?php
+$ogp_title = !empty($args['ogp_title']) ? $args['ogp_title'] : '【公式】Majicayo Project「怪人カード」';
+$ogp_url = !empty($args['ogp_url']) ? $args['ogp_url'] : 'https://majipro.xyz/';
+$ogp_image = !empty($args['ogp_image']) ? $args['ogp_image'] : '/imgs/ogp.png';
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -25,17 +30,17 @@
     <meta name="language" content="ja">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://majipro.xyz/" />
-    <meta property="og:title" content="【公式】Majicayo Project「怪人カード」" />
+    <meta property="og:url" content="<?php echo esc_url($ogp_url); ?>" />
+    <meta property="og:title" content="<?php echo esc_attr($ogp_title); ?>" />
     <meta property="og:description" content="中小企業×トレーディングカードゲーム「Majicayo Project 怪人カード」公式サイト。中小企業が個性豊かな「怪人」としてカードに！" />
-    <meta property="og:image" content="<?php bloginfo('template_directory') ?>/imgs/ogp.png" />
+    <meta property="og:image" content="<?php echo esc_url($ogp_image); ?>" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://majipro.xyz/" />
-    <meta property="twitter:title" content="【公式】Majicayo Project「怪人カード」" />
+    <meta property="twitter:url" content="<?php echo esc_url($ogp_url); ?>" />
+    <meta property="twitter:title" content="<?php echo esc_attr($ogp_title); ?>" />
     <meta property="twitter:description" content="中小企業×トレーディングカードゲーム「Majicayo Project 怪人カード」公式サイト。中小企業が個性豊かな「怪人」としてカードに！" />
-    <meta property="twitter:image" content="<?php bloginfo('template_directory') ?>/imgs/ogp.png" />
+    <meta property="twitter:image" content="<?php echo esc_url($ogp_image); ?>" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3BM6CXTZM"></script>
     <script>
