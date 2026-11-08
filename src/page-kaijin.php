@@ -2,7 +2,12 @@
 /*
 Template Name: カード詳細
 */
-get_header();
+get_header(null, [
+		'ogp_image' => get_field('card_image'),
+		'ogp_title' => get_the_title() . '｜【公式】Majicayo Project「怪人カード」',
+		'ogp_url' => get_permalink(),
+	]
+);
 
 if ( have_posts() ) {
 	the_post();
