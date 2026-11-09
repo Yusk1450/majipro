@@ -47,17 +47,4 @@ Template Name: ニュース一覧
 						endwhile;
 					endif;
 				?>
-
-<div class="news_item">
-                        <div class="news_date fw-bold fs_20 black_color">
-                            2026/08/22
-                        </div>
-                        <a href="<?php the_permalink(); ?>" class="news_content fs_20 fw-bold gold_color">
-                            稲沢夏まつり2026にてカード配布！端まで文字が来てしまった場合は折り返していただきたいです。端まで文字が来てしまった場合は折り返していただきたいです
-                        </a>
-                    </div>
-            </div>
-        </div>
-    </div>
-
 <?php get_footer(); ?>
