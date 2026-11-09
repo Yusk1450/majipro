@@ -38,7 +38,7 @@
 					?>
 				</div>
 
-				<a href="#" class="more_btn d-none">
+				<a href="<?php echo esc_url(home_url()); ?>/newslist" class="more_btn">
 					<div class="d-flex">
 						<div class="gold_color fw-bold">
 							ニュースへ

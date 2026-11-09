@@ -5,7 +5,7 @@
 
     <div id="news_detail">
         <div class="container-fluid innerarea">
-            <a href="<?php echo esc_url(home_url()); ?>" class="home_btn">
+            <a href="<?php echo esc_url(home_url()); ?>/newslist" class="home_btn">
                 <div class="d-flex">
                     <div class="gold_color">
                         <i class="fas fa-chevron-left"></i>
