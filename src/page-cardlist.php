@@ -54,9 +54,9 @@ Template Name: カードリスト
                     ));
                 ?>
                 <?php foreach ($support_cards as $card): ?>
-                    <div class="card_item gold_glow">
+                    <a href="<?php echo get_permalink($card->ID); ?>" class="card_item gold_glow">
                     <img src="<?php the_field('card_image', $card->ID); ?>" alt="<?php echo get_the_title($card->ID); ?>">
-                    </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
 
@@ -72,9 +72,9 @@ Template Name: カードリスト
                     ));
                 ?>
                 <?php foreach ($trigger_cards as $card): ?>
-                    <div class="card_item black_glow">
+                    <a href="<?php echo get_permalink($card->ID); ?>" class="card_item black_glow">
                     <img src="<?php the_field('card_image', $card->ID); ?>" alt="<?php echo get_the_title($card->ID); ?>">
-                    </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </div>

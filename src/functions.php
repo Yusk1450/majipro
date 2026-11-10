@@ -105,6 +105,18 @@
 		register_post_type( 'support', $args );
 	}
 
+	add_filter( 'single_template', 'majipro_use_page_support_template' );
+
+	function majipro_use_page_support_template( $template ) {
+		if ( is_singular( 'support' ) ) {
+			$page_template = locate_template( 'page-support.php' );
+			if ( $page_template ) {
+				return $page_template;
+			}
+		}
+		return $template;
+	}
+
 	/*
 	* カスタム投稿タイプ追加（トリガーカード）
 	*/
@@ -150,5 +162,17 @@
 		);
 
 		register_post_type( 'trigger', $args );
+	}
+
+	add_filter( 'single_template', 'majipro_use_page_trigger_template' );
+
+	function majipro_use_page_trigger_template( $template ) {
+		if ( is_singular( 'trigger' ) ) {
+			$page_template = locate_template( 'page-trigger.php' );
+			if ( $page_template ) {
+				return $page_template;
+			}
+		}
+		return $template;
 	}
 	

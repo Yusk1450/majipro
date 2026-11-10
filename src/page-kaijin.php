@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: カード詳細
+Template Name: 怪人カード詳細
 */
 get_header(null, [
 		'ogp_image' => get_field('card_image'),
@@ -13,127 +13,113 @@ if ( have_posts() ) {
 	the_post();
 }
 ?>
-
-	<div id="details">
-		<div class="container-fluid innerarea">
-			<div class="name sp_only">						
-				<div class="bg">
-					<img src="<?php bloginfo('template_directory') ?>/imgs/details_name.png" alt="<?php the_title(); ?>">
-				</div>
-				<div class="name_detail">
-					<?php if (get_field('company')): ?>
+<div id="kaijin" class="carddetail">
+	<div class="container innerarea">
+		<div class="contants">
+			<div class="name sp_only">
+				<?php if (get_field('company')): ?>
 					<div class="company_name_bg">
 						<div class="company_name fw-bold fs_20 gold_color">
 							<?php the_field('company'); ?>
 						</div>
 					</div>
+				<?php endif; ?>
+				<div class="card_name fw-bold fs_32 black_color">
+					<?php the_title(); ?>
+				</div>
+			</div>
+			<div class="card_item <?php echo (get_field('attribute')['value']).'_glow'; ?>">
+				<img src="<?php the_field('card_image'); ?>" alt="<?php the_field('card_name'); ?>">
+			</div>
+			<div class="info">
+				<div class="name pc_only">
+					<?php if (get_field('company')): ?>
+						<div class="company_name_bg">
+							<div class="company_name fw-bold fs_20 gold_color">
+								<?php the_field('company'); ?>
+							</div>
+						</div>
 					<?php endif; ?>
-					<div class="kaijin_name fw-bold fs_32 black_color">
+					<div class="card_name fw-bold fs_32 black_color">
 						<?php the_title(); ?>
 					</div>
 				</div>
-			</div>
-			<div class="d-flex card_container">
-				<div class="card_item
-					<?php echo (get_field('attribute')['value']).'_glow'; ?>">
-					<img src="<?php the_field('card_image'); ?>" alt="<?php the_field('card_name'); ?>">
-				</div>
-				<div class="info">
-					<div class="name pc_only">						
-						<div class="bg">
-							<img src="<?php bloginfo('template_directory') ?>/imgs/details_name.png" alt="<?php the_field('card_name'); ?>">
+				<div class="detail">
+					<div class="item">
+						<div class="subject">
+							<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
+							<div class="subject_title fw-bold fs_20">
+								属性
+							</div>
 						</div>
-						<div class="name_detail">
-							<?php if (get_field('company')): ?>
-							<div class="company_name_bg">
-								<div class="company_name fw-bold fs_20 gold_color">
-									<?php the_field('company'); ?>
-								</div>
-							</div>
-							<?php endif; ?>
-							<div class="kaijin_name fw-bold fs_32 black_color">
-								<?php the_title(); ?>
-							</div>
+						<div class="content fw-bold fs_20">
+							<?php echo get_field('attribute')['label']; ?>
 						</div>
 					</div>
-					<div class="kaijin_detail">
-						<div class="item d-flex align-items-center">
-							<div class="subject">
-								<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
-								<div class="subject_title fw-bold fs_20">
-									属性
-								</div>
-							</div>
-							<div class="detail_item fw-bold fs_20">
-								<?php echo get_field('attribute')['label']; ?>
+
+					<div class="item">
+						<div class="subject">
+							<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
+							<div class="subject_title fw-bold fs_20">
+								戦闘力
 							</div>
 						</div>
-
-						<div class="item d-flex align-items-center">
-							<div class="subject">
-								<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
-								<div class="subject_title fw-bold fs_20">
-									戦闘力
-								</div>
-							</div>
-							<div class="detail_item fw-bold fs_20">
-								<?php the_field('power'); ?>
-							</div>
+						<div class="content fw-bold fs_20">
+							<?php the_field('power'); ?>
 						</div>
-
-						<div class="item d-flex align-items-center">
-							<div class="subject">
-								<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
-								<div class="subject_title fw-bold fs_20">
-									コスト
-								</div>
-							</div>
-							<div class="detail_item fw-bold fs_20">
-								<?php the_field('cost'); ?>
-							</div>
-						</div>
-
-						<div class="item d-flex">
-							<div class="subject">
-								<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
-								<div class="subject_title fw-bold fs_20">
-									能力
-								</div>
-							</div>
-							<div class="detail_item fw-bold fs_20 detail_border">
-								<?php the_field('effect'); ?>
-							</div>
-						</div>
-
-						<?php if (get_field('pr')): ?>
-							<div class="item d-flex">
-								<div class="subject">
-									<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
-									<div class="subject_title fw-bold fs_20">
-										企業の強み
-									</div>
-								</div>
-								<div class="detail_item fw-bold fs_20 detail_border">
-									<?php the_field('pr'); ?>
-								</div>
-							</div>
-						<?php endif; ?>
-
-						<?php if (get_field('industry')): ?>
-							<div class="item d-flex align-items-center">
-								<div class="subject">
-									<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
-									<div class="subject_title fw-bold fs_20">
-										業種
-									</div>
-								</div>
-								<div class="detail_item fw-bold fs_20">
-									<?php the_field('industry'); ?>
-								</div>
-							</div>
-						<?php endif; ?>
-
 					</div>
+
+					<div class="item">
+						<div class="subject">
+							<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
+							<div class="subject_title fw-bold fs_20">
+								コスト
+							</div>
+						</div>
+						<div class="content fw-bold fs_20">
+							<?php the_field('cost'); ?>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="subject">
+							<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
+							<div class="subject_title fw-bold fs_20">
+								能力
+							</div>
+						</div>
+						<div class="content fw-bold fs_20 frame">
+							<?php the_field('effect'); ?>
+						</div>
+					</div>
+					
+					<?php if (get_field('pr')): ?>
+						<div class="item">
+							<div class="subject">
+								<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
+								<div class="subject_title fw-bold fs_20">
+									企業の強み
+								</div>
+							</div>
+							<div class="content fw-bold fs_20 frame">
+								<?php the_field('pr'); ?>
+							</div>
+						</div>
+					<?php endif; ?>	
+
+					<?php if (get_field('industry')): ?>
+						<div class="item">
+							<div class="subject">
+								<img src="<?php bloginfo('template_directory') ?>/imgs/details_subject.png">
+								<div class="subject_title fw-bold fs_20">
+									業種
+								</div>
+							</div>
+							<div class="content fw-bold fs_20">
+								<?php the_field('industry'); ?>
+							</div>
+						</div>
+					<?php endif; ?>	
 				</div>
 			</div>
 		</div>
@@ -150,7 +136,7 @@ if ( have_posts() ) {
 				Web
 			</div>
 		<?php endif; ?>
-		
+
 		<div class="btns d-flex justify-content-center">
 			<a href="<?php echo esc_url(home_url()); ?>/cardlist" class="back_btn">
 				<div class="d-flex">
@@ -174,5 +160,5 @@ if ( have_posts() ) {
 			</a>
 		</div>
 	</div>
-
+</div>
 <?php get_footer(); ?>

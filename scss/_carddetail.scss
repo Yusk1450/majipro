@@ -1,0 +1,231 @@
+.carddetail {
+	padding-top: vw(80, 1440);
+
+    @media screen and (max-width: 767px) {
+        padding-top: vw(80, 393);
+            overflow-x: hidden;
+    }
+
+	.contants {
+		display: flex;
+		gap: vw(80, 1440);
+        margin-bottom: vw(40, 1440);
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            gap: vw(24, 393);
+            margin-bottom: 0;
+        }
+
+        .name {
+            @media screen and (max-width: 767px) {
+                padding: vw(12, 393);
+                background-image: url('imgs/magical_circle_gold.png');
+                background-repeat: no-repeat;
+                background-position: right -24px center;
+                background-size: vw(116, 393) auto;
+                background-color: #CBAB71;
+            }
+        }
+
+        .company_name_bg
+        {
+            border: 2px solid #0c0c08;
+            margin-bottom: vw(4, 1440);
+            width: fit-content;
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: vw(4, 393);
+            }
+
+            .company_name
+                {
+                    padding : vw(2, 1440) vw(12, 1440);
+                    background-color : #0C0C08;
+                    border: 2px solid #CBAB71;
+
+                    @media screen and (max-width: 767px) {
+                        padding: vw(2, 393) vw(8, 393);
+                        font-size: 0.75rem !important;
+                    }
+                }
+        }
+
+		.card_item {
+            width: vw(400, 1440);
+            height: fit-content;
+            max-width: 400px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: vw(233, 393);
+                margin: 0 auto;
+                max-width: 233px;
+                height: auto;
+            }
+		}
+
+		.info {
+            flex: 1 1 auto;
+            width: 100%;
+			.name {
+                padding: vw(16, 1440) vw(24, 1440);
+                background-image: url('imgs/magical_circle_gold.png');
+                background-repeat: no-repeat;
+                background-position: right -64px center;
+                background-size: vw(300, 1440) auto;
+                background-color: #CBAB71;
+			}
+
+            .detail {
+                width : 100%;
+                border: 2px solid #CBAB71;
+                border-top: none;
+                height: auto;
+                padding-left: vw(24, 1440);
+                padding-right: vw(40, 1440);
+                padding-bottom: vw(40, 1440);
+        
+                @media screen and (max-width: 767px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: vw(40, 393);
+                    border: none;
+                }
+
+
+                .item {
+                    padding-top: vw(32, 1440);
+                    width: 100%;
+                    display: flex;
+
+                    @media screen and (max-width: 767px) {
+                        padding-top: 0;
+                        padding-bottom: vw(12, 393);
+                        flex-direction: column;
+                    }
+
+                    .subject {
+                        width: 148px;
+                        height: auto;
+                        position: relative;
+                        margin-right: vw(32, 1440);
+                        flex-shrink: 0;
+
+                        @media screen and (max-width: 767px) {
+                            width: 120px;
+                            margin-right: 0;
+                            margin-bottom: vw(8, 393);
+                        }
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .subject_title
+                        {
+                            position: absolute;
+                            top: 2px;
+                            left: 24px;
+
+                            @media screen and (max-width: 767px) {
+                                top: 2px;
+                                left: 12px;
+                            }
+                        }
+                    }
+
+                    .content
+                    {
+                        flex: 1 1 auto;
+                        margin: auto 0;
+
+                        @media screen and (max-width: 767px) {
+                            padding: 0 vw(12, 393);
+                        }
+                    }
+                }
+            }
+
+            .frame
+            {
+                border: 1px solid #656565;
+                padding: 12px !important;
+
+            }
+		}
+	}
+
+    .link
+    {
+        
+        width : fit-content;
+        height : vw(80, 1440);
+        max-height: 80px;
+        position: relative;
+        margin-top: vw(48, 1440);
+        margin-bottom: vw(8, 1440);
+
+        @media screen and (max-width: 767px) {
+            height: vw(80, 393);
+            max-height: 80px;
+            margin-top: 0;
+            margin-bottom: vw(8, 393);
+        }
+
+        img
+        {
+            width : auto;
+            height : 100%;
+            display : block;
+        }
+
+        a
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            padding: vw(15, 1440) vw(20, 1440);
+
+            @media screen and (max-width: 767px) {
+                padding: vw(15, 393) vw(20, 393);
+            }
+
+            i
+            {
+                font-size: vw(40, 1440);
+
+                @media screen and (max-width: 767px) {
+                    font-size: vw(40, 393);
+                    
+                }
+            }
+        }
+    }
+
+    .btns
+    {
+        width: fit-content;
+        margin: 0 auto;
+        gap: vw(24, 1440);
+        flex-direction: column;
+        align-items: center;
+        margin-top: vw(40, 1440);
+
+        @media screen and (max-width: 767px) {
+            gap: vw(24, 393);
+            margin-top: vw(40, 393);
+        }
+
+        .home
+        {
+            gap: 28px;
+        }
+    }
+}
