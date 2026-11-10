@@ -11,9 +11,7 @@
 			</div>
 		</div>
 		<div id="banner">
-			<div class="container-fluid innerarea">
-				<?php echo do_shortcode('[metaslider id="291"]'); ?>
-			</div>
+			<?php echo do_shortcode('[metaslider id="291"]'); ?>
 		</div>
 		<div id="news">
 			<div class="container-fluid innerarea">
