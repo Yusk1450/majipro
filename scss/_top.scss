@@ -15,9 +15,9 @@
 	}
 }
 
-#banner
+#metaslider_container_291
 {
-    a
+    li
     {
         width : 500px;
         height : auto;
@@ -25,19 +25,6 @@
         {
             width : 100%;
             height : auto;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        a
-        {
-            width : 140px;
-            height : auto;
-            img
-            {
-                width : 100%;
-                height : auto;
-            }
         }
     }
 }
