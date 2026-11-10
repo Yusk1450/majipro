@@ -15,6 +15,15 @@
 	}
 }
 
+#banner
+{
+
+    #metaslider-id-291
+    {
+        padding: 0 17px;
+    }
+}
+
 #news
 {
     margin-top: vw(80, 1440);
@@ -26,7 +35,7 @@
     padding-top: vw(40, 1440);
 
     @media screen and (max-width: 767px) {
-        margin-top: vw(80, 393);
+        margin-top: vw(40, 393);
         padding-bottom: vw(40, 393);
         margin-bottom: vw(80, 393);
         padding-top: vw(40, 393);
