@@ -9,7 +9,7 @@
 	.contants {
 		display: flex;
 		gap: vw(80, 1440);
-        margin-bottom: vw(40, 1440);
+        margin-bottom: vw(80, 1440);
 
         @media screen and (max-width: 767px) {
             flex-direction: column;
@@ -160,6 +160,78 @@
 		}
 	}
 
+    .faq
+    {
+        margin-bottom: vw(80, 1440);
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: vw(40, 393);
+        }
+
+        .faq_title
+        {
+            background-color: #CBAB71;
+            padding: vw(12, 1440);
+
+            @media screen and (max-width: 767px) {
+                padding: vw(5, 393) vw(12, 393);
+            }
+        }
+
+        .faq_item_list
+        {
+            display: flex;
+            flex-direction: column;
+            gap: vw(24, 1440);
+            
+            @media screen and (max-width: 767px) {
+                gap: vw(24, 393);
+            }
+
+            .faq_item
+            {
+                border: 1px solid #FFFFFF;
+
+                &:first-child
+                {
+                    border-top: none;
+                }
+
+                .text_wrapper
+                {
+                    padding: vw(12, 1440);
+                    display: flex;
+                    gap: vw(12, 1440);
+
+                    @media screen and (max-width: 767px) {
+                        padding: vw(12, 393);
+                        gap: vw(8, 393);
+                    }
+                }
+
+                .border_line
+                {
+                    margin: 0 vw(28, 1440);
+                    background-color: #FFFFFF;
+                    height: 1px;
+
+                    @media screen and (max-width: 767px) {
+                        margin: 0 vw(16, 393);
+                    }
+                }
+
+                .answer
+                {
+                    padding: vw(12, 1440);
+
+                    @media screen and (max-width: 767px) {
+                        padding: vw(12, 393);
+                    }
+                }
+            }
+        }
+    }
+
     .link
     {
         
@@ -167,13 +239,11 @@
         height : vw(80, 1440);
         max-height: 80px;
         position: relative;
-        margin-top: vw(48, 1440);
         margin-bottom: vw(8, 1440);
 
         @media screen and (max-width: 767px) {
             height: vw(80, 393);
             max-height: 80px;
-            margin-top: 0;
             margin-bottom: vw(8, 393);
         }
 

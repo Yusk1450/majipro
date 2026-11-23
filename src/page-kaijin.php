@@ -123,6 +123,38 @@ if ( have_posts() ) {
 				</div>
 			</div>
 		</div>
+
+		<?php if (get_field('faq_field')): ?>
+			<div class="faq">
+				<div class="faq_title fw-bold fs_20 black_color">
+					このカードについての質問
+				</div>
+				<div class="faq_item_list fs_20 fw-bold">
+					<?php foreach (get_field('faq_field') as $faq): ?>
+						<div class="faq_item">
+							<div class="text_wrapper">
+								<div class="gold_color">
+									Q.
+								</div>
+								<div class="text">
+									<?php echo $faq['question']; ?>
+								</div>
+							</div>
+							<div class="border_line"></div>
+							<div class="text_wrapper">
+								<div class="gold_color">
+									A.
+								</div>
+								<div class="text gold_color">
+									<?php echo $faq['answer']; ?>
+								</div>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				</div>
+			</div>
+		<?php endif; ?>
+
 		<?php if (get_field('website')): ?>
 			<div class="d-flex justify-content-center">
 				<div class="link">
